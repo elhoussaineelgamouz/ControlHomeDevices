@@ -1,0 +1,14 @@
+input_dir: ${PROJECT_DIR}/ControlHomeDevices
+output_dir: ${PROJECT_DIR}/ControlHomeDevices/App/Resources/Generated
+strings:
+    inputs: App/Resources/fr.lproj/Localizable.strings
+    outputs:
+    - templateName: structured-swift5
+      output: Strings.swift
+xcassets:
+    inputs:
+    - Assets.xcassets
+    outputs:
+    - templatePath: ${PROJECT_DIR}/ControlHomeDevices/App/template.stencil
+      output: Assets.generated.swift
+

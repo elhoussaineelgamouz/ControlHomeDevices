@@ -20,6 +20,20 @@
 		10B8A2092D1D719D0097FF38 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10B8A2082D1D719D0097FF38 /* GoogleService-Info.plist */; };
 		10B8A2102D1D7B930097FF38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A20E2D1D7B930097FF38 /* LoginViewController.swift */; };
 		10B8A2112D1D7B930097FF38 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B8A20F2D1D7B930097FF38 /* LoginViewController.xib */; };
+		10B8A21E2D1DA3960097FF38 /* swiftgen.config.yml in Resources */ = {isa = PBXBuildFile; fileRef = 10B8A21C2D1DA3960097FF38 /* swiftgen.config.yml */; };
+		10B8A21F2D1DA3960097FF38 /* template.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 10B8A21D2D1DA3960097FF38 /* template.stencil */; };
+		10B8A2322D1DBD230097FF38 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10B8A2342D1DBD230097FF38 /* Localizable.strings */; };
+		10B8A2442D1DF0420097FF38 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A2422D1DF0420097FF38 /* Strings.swift */; };
+		10B8A2462D1E9CBD0097FF38 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A2452D1E9CBD0097FF38 /* Device.swift */; };
+		10B8A2482D1E9D320097FF38 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A2472D1E9D320097FF38 /* DeviceType.swift */; };
+		10B8A24D2D1E9FC10097FF38 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A24B2D1E9FC10097FF38 /* HomeViewController.swift */; };
+		10B8A24E2D1E9FC10097FF38 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B8A24C2D1E9FC10097FF38 /* HomeViewController.xib */; };
+		10B8A2502D1EA1340097FF38 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A24F2D1EA1340097FF38 /* Room.swift */; };
+		10B8A2522D1EA41D0097FF38 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A2512D1EA41D0097FF38 /* HomeViewModel.swift */; };
+		10B8A2562D1EB8690097FF38 /* RoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A2542D1EB8690097FF38 /* RoomCollectionViewCell.swift */; };
+		10B8A2572D1EB8690097FF38 /* RoomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B8A2552D1EB8690097FF38 /* RoomCollectionViewCell.xib */; };
+		10B8A25A2D1EB8810097FF38 /* DeviceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A2582D1EB8810097FF38 /* DeviceCollectionViewCell.swift */; };
+		10B8A25B2D1EB8810097FF38 /* DeviceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B8A2592D1EB8810097FF38 /* DeviceCollectionViewCell.xib */; };
 		532E912BF1D9FFBE8FAC4BB2 /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D2B5E9339BB02F7B80FE1D /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework */; };
 		C4F45FC12A18ABCC8F33E20B /* Pods_ControlHomeDevices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD774D02E5F548C97C69052 /* Pods_ControlHomeDevices.framework */; };
 		EA4C5256E4DEBE4C6FBBC7D9 /* Pods_ControlHomeDevicesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38031FFAF491C8F75B2B2F46 /* Pods_ControlHomeDevicesTests.framework */; };
@@ -50,7 +64,6 @@
 		10B8A1D32D1D64160097FF38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10B8A1D52D1D641A0097FF38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10B8A1D82D1D641A0097FF38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		10B8A1DA2D1D641A0097FF38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10B8A1DF2D1D641B0097FF38 /* ControlHomeDevicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControlHomeDevicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B8A1E32D1D641B0097FF38 /* ControlHomeDevicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlHomeDevicesTests.swift; sourceTree = "<group>"; };
 		10B8A1E92D1D641B0097FF38 /* ControlHomeDevicesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControlHomeDevicesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +73,25 @@
 		10B8A2082D1D719D0097FF38 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		10B8A20E2D1D7B930097FF38 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		10B8A20F2D1D7B930097FF38 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		10B8A21C2D1DA3960097FF38 /* swiftgen.config.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.config.yml; sourceTree = "<group>"; };
+		10B8A21D2D1DA3960097FF38 /* template.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = template.stencil; sourceTree = "<group>"; };
+		10B8A22D2D1DBA640097FF38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10B8A22F2D1DBCFB0097FF38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		10B8A2332D1DBD230097FF38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		10B8A2362D1DBDEE0097FF38 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		10B8A2372D1DBDEE0097FF38 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		10B8A2382D1DBDEE0097FF38 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		10B8A2422D1DF0420097FF38 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		10B8A2452D1E9CBD0097FF38 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		10B8A2472D1E9D320097FF38 /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
+		10B8A24B2D1E9FC10097FF38 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		10B8A24C2D1E9FC10097FF38 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		10B8A24F2D1EA1340097FF38 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		10B8A2512D1EA41D0097FF38 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		10B8A2542D1EB8690097FF38 /* RoomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCollectionViewCell.swift; sourceTree = "<group>"; };
+		10B8A2552D1EB8690097FF38 /* RoomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomCollectionViewCell.xib; sourceTree = "<group>"; };
+		10B8A2582D1EB8810097FF38 /* DeviceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCollectionViewCell.swift; sourceTree = "<group>"; };
+		10B8A2592D1EB8810097FF38 /* DeviceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceCollectionViewCell.xib; sourceTree = "<group>"; };
 		1BCC06A483632A9BA236CF42 /* Pods-ControlHomeDevices-ControlHomeDevicesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevices-ControlHomeDevicesUITests.release.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevices-ControlHomeDevicesUITests/Pods-ControlHomeDevices-ControlHomeDevicesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		38031FFAF491C8F75B2B2F46 /* Pods_ControlHomeDevicesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ControlHomeDevicesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		467CC94B1F99EB16D5D85BF4 /* Pods-ControlHomeDevicesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevicesTests.release.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevicesTests/Pods-ControlHomeDevicesTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,7 +166,7 @@
 				10B8A1D22D1D64160097FF38 /* Main.storyboard */,
 				10B8A1D52D1D641A0097FF38 /* Assets.xcassets */,
 				10B8A1D72D1D641A0097FF38 /* LaunchScreen.storyboard */,
-				10B8A1DA2D1D641A0097FF38 /* Info.plist */,
+				10B8A22D2D1DBA640097FF38 /* Info.plist */,
 				10B8A2082D1D719D0097FF38 /* GoogleService-Info.plist */,
 			);
 			path = ControlHomeDevices;
@@ -170,6 +202,9 @@
 		10B8A1FD2D1D656B0097FF38 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				10B8A2452D1E9CBD0097FF38 /* Device.swift */,
+				10B8A2472D1E9D320097FF38 /* DeviceType.swift */,
+				10B8A24F2D1EA1340097FF38 /* Room.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -203,6 +238,8 @@
 		10B8A2012D1D659F0097FF38 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				10B8A21C2D1DA3960097FF38 /* swiftgen.config.yml */,
+				10B8A21D2D1DA3960097FF38 /* template.stencil */,
 				10B8A1CC2D1D64160097FF38 /* AppDelegate.swift */,
 				10B8A1CE2D1D64160097FF38 /* SceneDelegate.swift */,
 				10B8A2022D1D65AF0097FF38 /* Resources */,
@@ -213,6 +250,8 @@
 		10B8A2022D1D65AF0097FF38 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				10B8A21B2D1DA3490097FF38 /* Generated */,
+				10B8A2342D1DBD230097FF38 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -241,6 +280,9 @@
 		10B8A20A2D1D7AE30097FF38 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				10B8A2532D1EB8480097FF38 /* Cells */,
+				10B8A24B2D1E9FC10097FF38 /* HomeViewController.swift */,
+				10B8A24C2D1E9FC10097FF38 /* HomeViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -257,6 +299,7 @@
 		10B8A20C2D1D7B160097FF38 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				10B8A2512D1EA41D0097FF38 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -266,6 +309,25 @@
 			children = (
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		10B8A21B2D1DA3490097FF38 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				10B8A2422D1DF0420097FF38 /* Strings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		10B8A2532D1EB8480097FF38 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				10B8A2542D1EB8690097FF38 /* RoomCollectionViewCell.swift */,
+				10B8A2552D1EB8690097FF38 /* RoomCollectionViewCell.xib */,
+				10B8A2582D1EB8810097FF38 /* DeviceCollectionViewCell.swift */,
+				10B8A2592D1EB8810097FF38 /* DeviceCollectionViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		92F6A829F6ED3DBAE678B11F /* Pods */ = {
@@ -302,6 +364,8 @@
 				10B8A1C52D1D64160097FF38 /* Sources */,
 				10B8A1C62D1D64160097FF38 /* Frameworks */,
 				10B8A1C72D1D64160097FF38 /* Resources */,
+				10B8A2202D1DA6C00097FF38 /* Swift Gen */,
+				05850D705D5703C7C8AC6B46 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -339,6 +403,7 @@
 				10B8A1E52D1D641B0097FF38 /* Sources */,
 				10B8A1E62D1D641B0097FF38 /* Frameworks */,
 				10B8A1E72D1D641B0097FF38 /* Resources */,
+				4CF8F2BB91F5B1C3C35786C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -380,6 +445,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 10B8A1C02D1D64160097FF38;
 			productRefGroup = 10B8A1CA2D1D64160097FF38 /* Products */;
@@ -399,10 +465,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				10B8A2112D1D7B930097FF38 /* LoginViewController.xib in Resources */,
+				10B8A2322D1DBD230097FF38 /* Localizable.strings in Resources */,
 				10B8A1D92D1D641A0097FF38 /* LaunchScreen.storyboard in Resources */,
 				10B8A2092D1D719D0097FF38 /* GoogleService-Info.plist in Resources */,
+				10B8A21F2D1DA3960097FF38 /* template.stencil in Resources */,
+				10B8A2572D1EB8690097FF38 /* RoomCollectionViewCell.xib in Resources */,
 				10B8A1D62D1D641A0097FF38 /* Assets.xcassets in Resources */,
 				10B8A1D42D1D64160097FF38 /* Main.storyboard in Resources */,
+				10B8A21E2D1DA3960097FF38 /* swiftgen.config.yml in Resources */,
+				10B8A25B2D1EB8810097FF38 /* DeviceCollectionViewCell.xib in Resources */,
+				10B8A24E2D1E9FC10097FF38 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +495,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		05850D705D5703C7C8AC6B46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ControlHomeDevices/Pods-ControlHomeDevices-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ControlHomeDevices/Pods-ControlHomeDevices-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ControlHomeDevices/Pods-ControlHomeDevices-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10B8A2202D1DA6C00097FF38 /* Swift Gen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Gen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftgen >& /dev/null; then\n  swiftgen config run --config ControlHomeDevices/App/swiftgen.config.yml\nelse\n  echo \"error: SwiftGen not installed, download from https://github.com/SwiftGen/SwiftGen\"\nfi\n\n";
+		};
+		4CF8F2BB91F5B1C3C35786C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ControlHomeDevices-ControlHomeDevicesUITests/Pods-ControlHomeDevices-ControlHomeDevicesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ControlHomeDevices-ControlHomeDevicesUITests/Pods-ControlHomeDevices-ControlHomeDevicesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ControlHomeDevices-ControlHomeDevicesUITests/Pods-ControlHomeDevices-ControlHomeDevicesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		71ABD6C4EB225C3436B0978F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -501,6 +625,14 @@
 				10B8A1CF2D1D64160097FF38 /* SceneDelegate.swift in Sources */,
 				10B8A2102D1D7B930097FF38 /* LoginViewController.swift in Sources */,
 				10B8A2052D1D65E70097FF38 /* Constants.swift in Sources */,
+				10B8A24D2D1E9FC10097FF38 /* HomeViewController.swift in Sources */,
+				10B8A2522D1EA41D0097FF38 /* HomeViewModel.swift in Sources */,
+				10B8A2482D1E9D320097FF38 /* DeviceType.swift in Sources */,
+				10B8A2462D1E9CBD0097FF38 /* Device.swift in Sources */,
+				10B8A25A2D1EB8810097FF38 /* DeviceCollectionViewCell.swift in Sources */,
+				10B8A2442D1DF0420097FF38 /* Strings.swift in Sources */,
+				10B8A2502D1EA1340097FF38 /* Room.swift in Sources */,
+				10B8A2562D1EB8690097FF38 /* RoomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +673,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				10B8A1D32D1D64160097FF38 /* Base */,
+				10B8A22F2D1DBCFB0097FF38 /* en */,
+				10B8A2362D1DBDEE0097FF38 /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -549,8 +683,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				10B8A1D82D1D641A0097FF38 /* Base */,
+				10B8A2372D1DBDEE0097FF38 /* fr */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		10B8A2342D1DBD230097FF38 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10B8A2332D1DBD230097FF38 /* en */,
+				10B8A2382D1DBDEE0097FF38 /* fr */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -561,6 +705,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -624,6 +769,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -683,6 +829,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ControlHomeDevices/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -690,7 +837,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -712,6 +859,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ControlHomeDevices/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -719,7 +867,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

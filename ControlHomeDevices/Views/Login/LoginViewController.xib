@@ -4,8 +4,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,8 +19,14 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygv-Ur-g9s">
+                    <rect key="frame" x="176" y="99" width="41.333333333333343" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Thk-pq-P11">
-                    <rect key="frame" x="20" y="99" width="353" height="83"/>
+                    <rect key="frame" x="20" y="159.33333333333334" width="353" height="83"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dvM-Gj-KEF">
                             <rect key="frame" x="0.0" y="0.0" width="353" height="34"/>
@@ -35,27 +41,57 @@
                     </subviews>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnu-VD-QHr">
-                    <rect key="frame" x="20" y="202" width="353" height="38.333333333333343"/>
+                    <rect key="frame" x="20" y="262.33333333333331" width="353" height="38.333333333333314"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Button"/>
                 </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lkS-Qu-DJk">
+                    <rect key="frame" x="156.66666666666666" y="340.66666666666669" width="80" height="170"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2e-qz-YtX">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                            <color key="backgroundColor" name="ButtonBackground"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="2aS-jF-UNo"/>
+                                <constraint firstAttribute="width" constant="80" id="4FY-yy-1mo"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="ic_touchID"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUe-VG-ujj">
+                            <rect key="frame" x="0.0" y="90" width="80" height="80"/>
+                            <color key="backgroundColor" name="ButtonBackground"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="ic_faceID"/>
+                        </button>
+                    </subviews>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" name="Background"/>
             <constraints>
                 <constraint firstItem="xnu-VD-QHr" firstAttribute="top" secondItem="Thk-pq-P11" secondAttribute="bottom" constant="20" id="0SB-Gg-Mh3"/>
                 <constraint firstItem="xnu-VD-QHr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="2PK-Yx-onz"/>
                 <constraint firstItem="Thk-pq-P11" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="MBw-js-4Uw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xnu-VD-QHr" secondAttribute="trailing" constant="20" id="QqY-ou-HbD"/>
+                <constraint firstItem="Thk-pq-P11" firstAttribute="top" secondItem="Ygv-Ur-g9s" secondAttribute="bottom" constant="40" id="SQi-Mc-rZC"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Thk-pq-P11" secondAttribute="trailing" constant="20" id="Tq4-DN-7eW"/>
-                <constraint firstItem="Thk-pq-P11" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="Yga-V6-ZSK"/>
+                <constraint firstItem="Ygv-Ur-g9s" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Twx-YG-hsN"/>
+                <constraint firstItem="Ygv-Ur-g9s" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="Vty-bz-k1j"/>
+                <constraint firstItem="lkS-Qu-DJk" firstAttribute="top" secondItem="xnu-VD-QHr" secondAttribute="bottom" constant="40" id="bzT-i7-BGX"/>
+                <constraint firstItem="lkS-Qu-DJk" firstAttribute="centerX" secondItem="Thk-pq-P11" secondAttribute="centerX" id="nUb-kW-MQp"/>
             </constraints>
             <point key="canvasLocation" x="52.671755725190835" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="ic_faceID" width="42.666667938232422" height="42.666667938232422"/>
+        <image name="ic_touchID" width="42.666667938232422" height="42.666667938232422"/>
+        <namedColor name="Background">
+            <color red="0.058823529411764705" green="0.20784313725490194" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonBackground">
+            <color red="0.12156862745098039" green="0.49411764705882355" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
