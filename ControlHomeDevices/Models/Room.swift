@@ -11,5 +11,6 @@ struct Room: Hashable, Identifiable {
     let id: Int
     let name: String
     let devices: [Device]
+    let sensors: [Sensor]
     let consumption: [Double]
 }

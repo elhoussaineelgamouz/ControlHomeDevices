@@ -11,4 +11,7 @@ xcassets:
     outputs:
     - templatePath: ${PROJECT_DIR}/ControlHomeDevices/App/template.stencil
       output: Assets.generated.swift
+      params:
+        swiftui: true
+        publicAccess: true
 

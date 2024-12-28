@@ -8,7 +8,7 @@
 import Foundation
 
 enum DeviceType {
-    case lighting
+    case ligthing
     case temperature
     case other
 }
@@ -16,7 +16,7 @@ enum DeviceType {
 extension DeviceType {
     var iconName: String {
         switch self {
-        case .lighting:
+        case .ligthing:
             return "lightbulb.fill"
         case .temperature:
             return "thermometer"

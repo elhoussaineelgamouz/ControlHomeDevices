@@ -1,0 +1,42 @@
+//
+//  RoomCardView.swift
+//  ControlHomeDevices
+//
+//  Created by El houssaine El GAMOUZ on 27/12/2024.
+//
+
+import SwiftUI
+
+struct RoomCardView: View {
+    let room: Room
+    let devices: [Device]
+
+    var body: some View {
+        VStack(alignment: .leading) {
+            HStack {
+                Image(systemName: "square.grid.2x2.fill")
+                    .foregroundColor(.fontColor)
+                    .font(.system(size:24))
+                Text(room.name)
+                    .foregroundColor(.fontColor)
+                    .font(.system(size:18, weight: .bold, design: .rounded))
+                    .padding(.horizontal)
+                    .lineLimit(1)
+                Spacer()
+            }
+            Spacer()
+            Text("\(room.devices.filter { $0.isConnected }.count) device(s) connected")
+                .foregroundColor(.secondaryFont)
+                .font(.system(size:12, weight: .semibold))
+        }
+        .padding()
+        .frame(width: 240, height: 140)
+        .background(RoundedRectangle(cornerRadius: 10).foregroundColor(.panelColor))
+    }
+}
+
+struct RoomCard_Previews: PreviewProvider {
+    static var previews: some View {
+        RoomCardView(room: ModelData.rooms[0], devices: ModelData.rooms[0].devices)
+    }
+}

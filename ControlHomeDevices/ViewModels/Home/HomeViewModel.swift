@@ -17,17 +17,17 @@ class HomeViewModel {
 
         let initialRooms = [
             Room(id: 1, name: "Living Room1", devices: [
-                Device(id: 1, roomId: 1, name: "Smart Lamp 1", type: .lighting, isConnected: false),
-                Device(id: 2, roomId: 1, name: "Smart Lamp 2", type: .lighting, isConnected: false)
-            ], consumption: [0.9]),
-            Room(id: 2, name: "Living Room2", devices: [Device(id: 3, roomId: 2, name: "Smart Lamp 3", type: .lighting, isConnected: false)], consumption: [0.5])
+                Device(id: 1, roomId: 1, name: "Smart Lamp 1", type: .ligthing, isConnected: false),
+                Device(id: 2, roomId: 1, name: "Smart Lamp 2", type: .ligthing, isConnected: false)
+            ], sensors: [], consumption: [0.9]),
+            Room(id: 2, name: "Living Room2", devices: [Device(id: 3, roomId: 2, name: "Smart Lamp 3", type: .ligthing, isConnected: false)], sensors: [], consumption: [0.5])
         ]
         let initialDevices = [
-            Device(id: 1, roomId: 1, name: "Smart Lamp 1", type: .lighting, isConnected: false),
-            Device(id: 2, roomId: 1, name: "Smart Lamp 2", type: .lighting, isConnected: false),
-            Device(id: 3, roomId: 2, name: "Smart Lamp 3", type: .lighting, isConnected: false),
-            Device(id: 3, roomId: 2, name: "Smart Lamp 4", type: .lighting, isConnected: false),
-            Device(id: 3, roomId: 2, name: "Smart Lamp 5", type: .lighting, isConnected: false)
+            Device(id: 1, roomId: 1, name: "Smart Lamp 1", type: .ligthing, isConnected: false),
+            Device(id: 2, roomId: 1, name: "Smart Lamp 2", type: .ligthing, isConnected: false),
+            Device(id: 3, roomId: 2, name: "Smart Lamp 3", type: .ligthing, isConnected: false),
+            Device(id: 3, roomId: 2, name: "Smart Lamp 4", type: .ligthing, isConnected: false),
+            Device(id: 3, roomId: 2, name: "Smart Lamp 5", type: .ligthing, isConnected: false)
         ]
 
         rooms.accept(initialRooms)

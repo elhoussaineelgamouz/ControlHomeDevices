@@ -9,16 +9,31 @@ import UIKit
 import RxSwift
 import RxCocoa
 
+protocol HomeFactoryControllerCoordinator: AnyObject {
+    func didSelectItemRoomCell(roomItem: Room)
+    func didSelectItemDeviceCell(deviceItem: Device)
+}
+
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var roomsCollectionView: UICollectionView!
     @IBOutlet weak var devicesCollectionView: UICollectionView!
 
     // MARK: - Properties
+    private weak var coordinator: HomeFactoryControllerCoordinator?
     private let disposeBag = DisposeBag()
-    private let viewModel = HomeViewModel()
+    private var viewModel = HomeViewModel()
 
 
+    init(viewModel: HomeViewModel, coordinator: HomeFactoryControllerCoordinator) {
+        self.viewModel = viewModel
+        self.coordinator = coordinator
+        super.init(nibName: nil, bundle: nil)
+    }
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionsView()
@@ -54,12 +69,14 @@ class HomeViewController: UIViewController {
         // Handle selection events
         roomsCollectionView.rx.modelSelected(Room.self)
             .subscribe(onNext: { room in
+                self.coordinator?.didSelectItemRoomCell(roomItem: room)
                 print("Selected room: \(room.name)")
             })
             .disposed(by: disposeBag)
 
         devicesCollectionView.rx.modelSelected(Device.self)
             .subscribe(onNext: { device in
+                self.coordinator?.didSelectItemDeviceCell(deviceItem: device)
                 print("Selected device: \(device.name)")
             })
             .disposed(by: disposeBag)

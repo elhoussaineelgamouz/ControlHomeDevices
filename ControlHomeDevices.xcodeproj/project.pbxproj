@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		107C41CB2D1F447600CD1718 /* AppFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41CA2D1F447600CD1718 /* AppFactory.swift */; };
+		107C41CD2D1F44E600CD1718 /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41CC2D1F44E600CD1718 /* HomeFactory.swift */; };
+		107C41CF2D1F467100CD1718 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41CE2D1F467100CD1718 /* HomeCoordinator.swift */; };
+		107C41D12D1F4B4700CD1718 /* RoomDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41D02D1F4B4700CD1718 /* RoomDetailsCoordinator.swift */; };
+		107C41D32D1F4B5900CD1718 /* DeviceDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41D22D1F4B5900CD1718 /* DeviceDetailsCoordinator.swift */; };
+		107C41D52D1F4B9600CD1718 /* RoomDetailsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41D42D1F4B9600CD1718 /* RoomDetailsFactory.swift */; };
+		107C41D72D1F4BA400CD1718 /* DeviceDetailsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41D62D1F4BA400CD1718 /* DeviceDetailsFactory.swift */; };
+		107C41DA2D1F519D00CD1718 /* RoomDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41D92D1F519D00CD1718 /* RoomDetailsView.swift */; };
+		107C41DC2D1F51FD00CD1718 /* SensorDataCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41DB2D1F51FD00CD1718 /* SensorDataCardView.swift */; };
+		107C41DF2D1F52EE00CD1718 /* DeviceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41DE2D1F52EE00CD1718 /* DeviceDetailsView.swift */; };
+		107C41E12D1F557000CD1718 /* RoomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41E02D1F557000CD1718 /* RoomCardView.swift */; };
+		107C41E32D1F559200CD1718 /* DeviceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41E22D1F559200CD1718 /* DeviceCardView.swift */; };
+		107C41E62D1F56B800CD1718 /* DeviceConnectionToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41E52D1F56B800CD1718 /* DeviceConnectionToggleStyle.swift */; };
+		107C41E82D1F590C00CD1718 /* Assets.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41E72D1F590C00CD1718 /* Assets.generated.swift */; };
+		107C41EA2D203BC200CD1718 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41E92D203BC200CD1718 /* Colors.swift */; };
+		107C41EC2D203F2C00CD1718 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41EB2D203F2C00CD1718 /* ModelData.swift */; };
+		107C41EE2D203F5B00CD1718 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41ED2D203F5B00CD1718 /* Sensor.swift */; };
+		107C41F02D20452100CD1718 /* LoginFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41EF2D20452100CD1718 /* LoginFactory.swift */; };
+		107C41F22D20453B00CD1718 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41F12D20453B00CD1718 /* LoginCoordinator.swift */; };
+		107C41F42D20497100CD1718 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41F32D20497100CD1718 /* LoginViewModel.swift */; };
 		10B8A1CD2D1D64160097FF38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A1CC2D1D64160097FF38 /* AppDelegate.swift */; };
 		10B8A1CF2D1D64160097FF38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A1CE2D1D64160097FF38 /* SceneDelegate.swift */; };
 		10B8A1D12D1D64160097FF38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A1D02D1D64160097FF38 /* ViewController.swift */; };
@@ -34,6 +54,8 @@
 		10B8A2572D1EB8690097FF38 /* RoomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B8A2552D1EB8690097FF38 /* RoomCollectionViewCell.xib */; };
 		10B8A25A2D1EB8810097FF38 /* DeviceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A2582D1EB8810097FF38 /* DeviceCollectionViewCell.swift */; };
 		10B8A25B2D1EB8810097FF38 /* DeviceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B8A2592D1EB8810097FF38 /* DeviceCollectionViewCell.xib */; };
+		10B8A2622D1EF7E40097FF38 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A2612D1EF7E40097FF38 /* Coordinator.swift */; };
+		10B8A2642D1EF7FD0097FF38 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A2632D1EF7FD0097FF38 /* AppCoordinator.swift */; };
 		532E912BF1D9FFBE8FAC4BB2 /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D2B5E9339BB02F7B80FE1D /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework */; };
 		C4F45FC12A18ABCC8F33E20B /* Pods_ControlHomeDevices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD774D02E5F548C97C69052 /* Pods_ControlHomeDevices.framework */; };
 		EA4C5256E4DEBE4C6FBBC7D9 /* Pods_ControlHomeDevicesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38031FFAF491C8F75B2B2F46 /* Pods_ControlHomeDevicesTests.framework */; };
@@ -57,6 +79,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		107C41CA2D1F447600CD1718 /* AppFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactory.swift; sourceTree = "<group>"; };
+		107C41CC2D1F44E600CD1718 /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
+		107C41CE2D1F467100CD1718 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		107C41D02D1F4B4700CD1718 /* RoomDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailsCoordinator.swift; sourceTree = "<group>"; };
+		107C41D22D1F4B5900CD1718 /* DeviceDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailsCoordinator.swift; sourceTree = "<group>"; };
+		107C41D42D1F4B9600CD1718 /* RoomDetailsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailsFactory.swift; sourceTree = "<group>"; };
+		107C41D62D1F4BA400CD1718 /* DeviceDetailsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailsFactory.swift; sourceTree = "<group>"; };
+		107C41D92D1F519D00CD1718 /* RoomDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailsView.swift; sourceTree = "<group>"; };
+		107C41DB2D1F51FD00CD1718 /* SensorDataCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataCardView.swift; sourceTree = "<group>"; };
+		107C41DE2D1F52EE00CD1718 /* DeviceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailsView.swift; sourceTree = "<group>"; };
+		107C41E02D1F557000CD1718 /* RoomCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCardView.swift; sourceTree = "<group>"; };
+		107C41E22D1F559200CD1718 /* DeviceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCardView.swift; sourceTree = "<group>"; };
+		107C41E52D1F56B800CD1718 /* DeviceConnectionToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConnectionToggleStyle.swift; sourceTree = "<group>"; };
+		107C41E72D1F590C00CD1718 /* Assets.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.generated.swift; sourceTree = "<group>"; };
+		107C41E92D203BC200CD1718 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		107C41EB2D203F2C00CD1718 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		107C41ED2D203F5B00CD1718 /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		107C41EF2D20452100CD1718 /* LoginFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFactory.swift; sourceTree = "<group>"; };
+		107C41F12D20453B00CD1718 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		107C41F32D20497100CD1718 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		10B8A1C92D1D64160097FF38 /* ControlHomeDevices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControlHomeDevices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B8A1CC2D1D64160097FF38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10B8A1CE2D1D64160097FF38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +134,8 @@
 		10B8A2552D1EB8690097FF38 /* RoomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomCollectionViewCell.xib; sourceTree = "<group>"; };
 		10B8A2582D1EB8810097FF38 /* DeviceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCollectionViewCell.swift; sourceTree = "<group>"; };
 		10B8A2592D1EB8810097FF38 /* DeviceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceCollectionViewCell.xib; sourceTree = "<group>"; };
+		10B8A2612D1EF7E40097FF38 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		10B8A2632D1EF7FD0097FF38 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		1BCC06A483632A9BA236CF42 /* Pods-ControlHomeDevices-ControlHomeDevicesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevices-ControlHomeDevicesUITests.release.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevices-ControlHomeDevicesUITests/Pods-ControlHomeDevices-ControlHomeDevicesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		38031FFAF491C8F75B2B2F46 /* Pods_ControlHomeDevicesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ControlHomeDevicesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		467CC94B1F99EB16D5D85BF4 /* Pods-ControlHomeDevicesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevicesTests.release.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevicesTests/Pods-ControlHomeDevicesTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +175,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		107C41C92D1F446100CD1718 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				107C41CA2D1F447600CD1718 /* AppFactory.swift */,
+				107C41CC2D1F44E600CD1718 /* HomeFactory.swift */,
+				107C41D42D1F4B9600CD1718 /* RoomDetailsFactory.swift */,
+				107C41D62D1F4BA400CD1718 /* DeviceDetailsFactory.swift */,
+				107C41EF2D20452100CD1718 /* LoginFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		107C41D82D1F518600CD1718 /* RoomDetails */ = {
+			isa = PBXGroup;
+			children = (
+				107C41D92D1F519D00CD1718 /* RoomDetailsView.swift */,
+				107C41DB2D1F51FD00CD1718 /* SensorDataCardView.swift */,
+			);
+			path = RoomDetails;
+			sourceTree = "<group>";
+		};
+		107C41DD2D1F52C900CD1718 /* DeviceDetails */ = {
+			isa = PBXGroup;
+			children = (
+				107C41DE2D1F52EE00CD1718 /* DeviceDetailsView.swift */,
+			);
+			path = DeviceDetails;
+			sourceTree = "<group>";
+		};
+		107C41E42D1F569900CD1718 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				107C41E52D1F56B800CD1718 /* DeviceConnectionToggleStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 		10B8A1C02D1D64160097FF38 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +237,8 @@
 		10B8A1CB2D1D64160097FF38 /* ControlHomeDevices */ = {
 			isa = PBXGroup;
 			children = (
+				107C41E42D1F569900CD1718 /* Styles */,
+				10B8A25C2D1EF77A0097FF38 /* CompositionRoot */,
 				10B8A2012D1D659F0097FF38 /* App */,
 				10B8A2002D1D65840097FF38 /* Utils */,
 				10B8A1FF2D1D657C0097FF38 /* Services */,
@@ -192,6 +275,8 @@
 		10B8A1FC2D1D65640097FF38 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				107C41DD2D1F52C900CD1718 /* DeviceDetails */,
+				107C41D82D1F518600CD1718 /* RoomDetails */,
 				10B8A20B2D1D7B060097FF38 /* Login */,
 				10B8A20A2D1D7AE30097FF38 /* Home */,
 				10B8A2032D1D65C10097FF38 /* Common */,
@@ -205,6 +290,8 @@
 				10B8A2452D1E9CBD0097FF38 /* Device.swift */,
 				10B8A2472D1E9D320097FF38 /* DeviceType.swift */,
 				10B8A24F2D1EA1340097FF38 /* Room.swift */,
+				107C41EB2D203F2C00CD1718 /* ModelData.swift */,
+				107C41ED2D203F5B00CD1718 /* Sensor.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,8 +327,6 @@
 			children = (
 				10B8A21C2D1DA3960097FF38 /* swiftgen.config.yml */,
 				10B8A21D2D1DA3960097FF38 /* template.stencil */,
-				10B8A1CC2D1D64160097FF38 /* AppDelegate.swift */,
-				10B8A1CE2D1D64160097FF38 /* SceneDelegate.swift */,
 				10B8A2022D1D65AF0097FF38 /* Resources */,
 			);
 			path = App;
@@ -252,6 +337,7 @@
 			children = (
 				10B8A21B2D1DA3490097FF38 /* Generated */,
 				10B8A2342D1DBD230097FF38 /* Localizable.strings */,
+				107C41E92D203BC200CD1718 /* Colors.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -283,6 +369,8 @@
 				10B8A2532D1EB8480097FF38 /* Cells */,
 				10B8A24B2D1E9FC10097FF38 /* HomeViewController.swift */,
 				10B8A24C2D1E9FC10097FF38 /* HomeViewController.xib */,
+				107C41E02D1F557000CD1718 /* RoomCardView.swift */,
+				107C41E22D1F559200CD1718 /* DeviceCardView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -307,6 +395,7 @@
 		10B8A20D2D1D7B240097FF38 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				107C41F32D20497100CD1718 /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -314,6 +403,7 @@
 		10B8A21B2D1DA3490097FF38 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				107C41E72D1F590C00CD1718 /* Assets.generated.swift */,
 				10B8A2422D1DF0420097FF38 /* Strings.swift */,
 			);
 			path = Generated;
@@ -328,6 +418,54 @@
 				10B8A2592D1EB8810097FF38 /* DeviceCollectionViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		10B8A25C2D1EF77A0097FF38 /* CompositionRoot */ = {
+			isa = PBXGroup;
+			children = (
+				107C41C92D1F446100CD1718 /* Factories */,
+				10B8A25E2D1EF79D0097FF38 /* Coordinator */,
+				10B8A25D2D1EF7910097FF38 /* System */,
+			);
+			path = CompositionRoot;
+			sourceTree = "<group>";
+		};
+		10B8A25D2D1EF7910097FF38 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				10B8A1CC2D1D64160097FF38 /* AppDelegate.swift */,
+				10B8A1CE2D1D64160097FF38 /* SceneDelegate.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		10B8A25E2D1EF79D0097FF38 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				10B8A2602D1EF7D00097FF38 /* AppCoordinator */,
+				10B8A25F2D1EF7BD0097FF38 /* CoordinatorScreens */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		10B8A25F2D1EF7BD0097FF38 /* CoordinatorScreens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoordinatorScreens;
+			sourceTree = "<group>";
+		};
+		10B8A2602D1EF7D00097FF38 /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				10B8A2612D1EF7E40097FF38 /* Coordinator.swift */,
+				10B8A2632D1EF7FD0097FF38 /* AppCoordinator.swift */,
+				107C41CE2D1F467100CD1718 /* HomeCoordinator.swift */,
+				107C41D02D1F4B4700CD1718 /* RoomDetailsCoordinator.swift */,
+				107C41D22D1F4B5900CD1718 /* DeviceDetailsCoordinator.swift */,
+				107C41F12D20453B00CD1718 /* LoginCoordinator.swift */,
+			);
+			path = AppCoordinator;
 			sourceTree = "<group>";
 		};
 		92F6A829F6ED3DBAE678B11F /* Pods */ = {
@@ -514,7 +652,7 @@
 		};
 		10B8A2202D1DA6C00097FF38 /* Swift Gen */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -526,7 +664,7 @@
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftgen >& /dev/null; then\n  swiftgen config run --config ControlHomeDevices/App/swiftgen.config.yml\nelse\n  echo \"error: SwiftGen not installed, download from https://github.com/SwiftGen/SwiftGen\"\nfi\n\n";
 		};
@@ -620,17 +758,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				107C41F22D20453B00CD1718 /* LoginCoordinator.swift in Sources */,
 				10B8A1D12D1D64160097FF38 /* ViewController.swift in Sources */,
+				107C41EE2D203F5B00CD1718 /* Sensor.swift in Sources */,
+				107C41EA2D203BC200CD1718 /* Colors.swift in Sources */,
+				107C41DA2D1F519D00CD1718 /* RoomDetailsView.swift in Sources */,
+				107C41DF2D1F52EE00CD1718 /* DeviceDetailsView.swift in Sources */,
+				107C41E12D1F557000CD1718 /* RoomCardView.swift in Sources */,
+				107C41E32D1F559200CD1718 /* DeviceCardView.swift in Sources */,
+				107C41E62D1F56B800CD1718 /* DeviceConnectionToggleStyle.swift in Sources */,
 				10B8A1CD2D1D64160097FF38 /* AppDelegate.swift in Sources */,
 				10B8A1CF2D1D64160097FF38 /* SceneDelegate.swift in Sources */,
+				107C41DC2D1F51FD00CD1718 /* SensorDataCardView.swift in Sources */,
+				107C41D32D1F4B5900CD1718 /* DeviceDetailsCoordinator.swift in Sources */,
+				107C41F42D20497100CD1718 /* LoginViewModel.swift in Sources */,
 				10B8A2102D1D7B930097FF38 /* LoginViewController.swift in Sources */,
+				107C41EC2D203F2C00CD1718 /* ModelData.swift in Sources */,
+				107C41F02D20452100CD1718 /* LoginFactory.swift in Sources */,
+				107C41CB2D1F447600CD1718 /* AppFactory.swift in Sources */,
 				10B8A2052D1D65E70097FF38 /* Constants.swift in Sources */,
+				107C41D72D1F4BA400CD1718 /* DeviceDetailsFactory.swift in Sources */,
 				10B8A24D2D1E9FC10097FF38 /* HomeViewController.swift in Sources */,
+				10B8A2622D1EF7E40097FF38 /* Coordinator.swift in Sources */,
 				10B8A2522D1EA41D0097FF38 /* HomeViewModel.swift in Sources */,
+				107C41CD2D1F44E600CD1718 /* HomeFactory.swift in Sources */,
+				107C41D12D1F4B4700CD1718 /* RoomDetailsCoordinator.swift in Sources */,
 				10B8A2482D1E9D320097FF38 /* DeviceType.swift in Sources */,
+				107C41D52D1F4B9600CD1718 /* RoomDetailsFactory.swift in Sources */,
+				107C41CF2D1F467100CD1718 /* HomeCoordinator.swift in Sources */,
+				107C41E82D1F590C00CD1718 /* Assets.generated.swift in Sources */,
 				10B8A2462D1E9CBD0097FF38 /* Device.swift in Sources */,
 				10B8A25A2D1EB8810097FF38 /* DeviceCollectionViewCell.swift in Sources */,
 				10B8A2442D1DF0420097FF38 /* Strings.swift in Sources */,
+				10B8A2642D1EF7FD0097FF38 /* AppCoordinator.swift in Sources */,
 				10B8A2502D1EA1340097FF38 /* Room.swift in Sources */,
 				10B8A2562D1EB8690097FF38 /* RoomCollectionViewCell.swift in Sources */,
 			);
@@ -826,6 +986,7 @@
 			baseConfigurationReference = 8727809FE5B75D0BC4DBB721 /* Pods-ControlHomeDevices.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOLS = NO;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -837,7 +998,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -856,6 +1017,7 @@
 			baseConfigurationReference = B4BD981A13BD518CC9E6F406 /* Pods-ControlHomeDevices.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOLS = NO;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -867,7 +1029,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
