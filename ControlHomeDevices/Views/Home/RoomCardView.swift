@@ -25,9 +25,9 @@ struct RoomCardView: View {
                 Spacer()
             }
             Spacer()
-            Text("\(room.devices.filter { $0.isConnected }.count) device(s) connected")
+            /*Text("\(room.devices.filter { $0.isConnected }.count) device(s) connected")
                 .foregroundColor(.secondaryFont)
-                .font(.system(size:12, weight: .semibold))
+                .font(.system(size:12, weight: .semibold))*/
         }
         .padding()
         .frame(width: 240, height: 140)
@@ -37,6 +37,6 @@ struct RoomCardView: View {
 
 struct RoomCard_Previews: PreviewProvider {
     static var previews: some View {
-        RoomCardView(room: ModelData.rooms[0], devices: ModelData.rooms[0].devices)
+        RoomCardView(room: ModelData.rooms[0], devices: [])
     }
 }

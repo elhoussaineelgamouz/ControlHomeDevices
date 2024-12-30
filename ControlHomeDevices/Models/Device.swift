@@ -7,10 +7,11 @@
 
 import Foundation
 
-struct Device: Hashable, Identifiable {
-    let id: Int
-    let roomId: Int
+struct Device: Codable, Identifiable {
+    let id: String
     let name: String
-    let type: DeviceType
+    let roomId: String
+    let isOn: Bool
+    let type: String
     let isConnected: Bool
 }

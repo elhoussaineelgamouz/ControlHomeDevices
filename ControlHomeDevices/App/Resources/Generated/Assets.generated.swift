@@ -6,11 +6,11 @@ import UIKit
 public extension UIImage {
   static let icFaceID: UIImage = UIImage(named: "ic_faceID")!
   static let icTouchID: UIImage = UIImage(named: "ic_touchID")!
+  static let smartLamp: UIImage = UIImage(named: "smartLamp")!
 }
 
 // MARK: - Colors
 public extension UIColor {
- /* static let accentColor: UIColor = UIColor(named: "AccentColor")!
   static let accentColor: UIColor = UIColor(named: "AccentColor")!
   static let background: UIColor = UIColor(named: "Background")!
   static let dataBlue: UIColor = UIColor(named: "DataBlue")!
@@ -20,5 +20,5 @@ public extension UIColor {
   static let panelColor: UIColor = UIColor(named: "PanelColor")!
   static let secondaryFont: UIColor = UIColor(named: "SecondaryFont")!
   static let tabIconInactive: UIColor = UIColor(named: "TabIconInactive")!
-  static let toggleBackground: UIColor = UIColor(named: "ToggleBackground")!*/
+  static let toggleBackground: UIColor = UIColor(named: "ToggleBackground")!
 }

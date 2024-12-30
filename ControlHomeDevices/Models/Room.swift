@@ -7,10 +7,7 @@
 
 import Foundation
 
-struct Room: Hashable, Identifiable {
-    let id: Int
+struct Room: Codable, Identifiable {
+    let id: String
     let name: String
-    let devices: [Device]
-    let sensors: [Sensor]
-    let consumption: [Double]
 }

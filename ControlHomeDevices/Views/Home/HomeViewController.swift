@@ -8,6 +8,8 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Combine
+
 
 protocol HomeFactoryControllerCoordinator: AnyObject {
     func didSelectItemRoomCell(roomItem: Room)
@@ -16,34 +18,36 @@ protocol HomeFactoryControllerCoordinator: AnyObject {
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var smartLamHomeImage: UIImageView!
     @IBOutlet weak var roomsCollectionView: UICollectionView!
     @IBOutlet weak var devicesCollectionView: UICollectionView!
 
     // MARK: - Properties
-    private weak var coordinator: HomeFactoryControllerCoordinator?
     private let disposeBag = DisposeBag()
-    private var viewModel = HomeViewModel()
+    private var viewModel: HomeViewModel?
 
 
     init(viewModel: HomeViewModel, coordinator: HomeFactoryControllerCoordinator) {
         self.viewModel = viewModel
-        self.coordinator = coordinator
         super.init(nibName: nil, bundle: nil)
     }
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupCollectionsView()
+        setupViews()
         bindCollectionsView()
     }
 
-    private func setupCollectionsView() {
+
+    private func setupViews() {
+        self.devicesCollectionView.register(UINib(nibName: "DeviceCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: DeviceCollectionViewCell.reuseIdentifier)
+
         self.roomsCollectionView.register(UINib(nibName: "RoomCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: RoomCollectionViewCell.reuseIdentifier)
 
-        self.devicesCollectionView.register(UINib(nibName: "DeviceCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: DeviceCollectionViewCell.reuseIdentifier)
 
         let customLayout = UICollectionViewFlowLayout()
         customLayout.minimumLineSpacing = 10
@@ -51,16 +55,20 @@ class HomeViewController: UIViewController {
         customLayout.scrollDirection = .horizontal
         self.roomsCollectionView.collectionViewLayout = customLayout
         self.devicesCollectionView.collectionViewLayout = customLayout
+
+        self.smartLamHomeImage.image = .smartLamp
+        self.view.backgroundColor = .background
     }
 
     private func bindCollectionsView() {
-        viewModel.rooms
+
+        viewModel?.rooms
             .bind(to: roomsCollectionView.rx.items(cellIdentifier: RoomCollectionViewCell.reuseIdentifier, cellType: RoomCollectionViewCell.self)) { index, room, cell in
                 cell.configure(with: room)
             }
             .disposed(by: disposeBag)
 
-        viewModel.devices
+        viewModel?.devices
             .bind(to: devicesCollectionView.rx.items(cellIdentifier: DeviceCollectionViewCell.reuseIdentifier, cellType: DeviceCollectionViewCell.self)) { index, device, cell in
                 cell.configure(with: device)
             }
@@ -69,15 +77,13 @@ class HomeViewController: UIViewController {
         // Handle selection events
         roomsCollectionView.rx.modelSelected(Room.self)
             .subscribe(onNext: { room in
-                self.coordinator?.didSelectItemRoomCell(roomItem: room)
-                print("Selected room: \(room.name)")
+                self.viewModel?.showRoomDetails(roomItem: room)
             })
             .disposed(by: disposeBag)
 
         devicesCollectionView.rx.modelSelected(Device.self)
             .subscribe(onNext: { device in
-                self.coordinator?.didSelectItemDeviceCell(deviceItem: device)
-                print("Selected device: \(device.name)")
+                self.viewModel?.showDeviceDetails(deviceItem: device)
             })
             .disposed(by: disposeBag)
     }

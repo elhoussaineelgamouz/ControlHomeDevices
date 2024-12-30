@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import SwiftUI
 
 protocol DeviceDetailsFactory {
     func makeModule(coordinator: DeviceDetailsViewControllerCoordinator, deviceItem: Device) -> UIViewController
@@ -14,15 +15,8 @@ protocol DeviceDetailsFactory {
 
 struct DeviceDetailsFactoryImp: DeviceDetailsFactory {
     func makeModule(coordinator: DeviceDetailsViewControllerCoordinator, deviceItem: Device) -> UIViewController {
-        /*let apiClientService = ApiClientServiceImp()
-         guard let movieId = movieItem.id else {
-         return UIViewController()
-         }
-         let movieDetailsRepository = MovieDetailsRepositoryImp(apiClientService: apiClientService, urlList: "\(Endpoint.baseMovieDetailsUrl.replacingOccurrences(of: "{movie_id}", with: String(movieId)))")
-         let loadMovieDetailsCase = LoadMovieDetailsUseCaseImp(movieDetailsRepository: movieDetailsRepository)
-         let state = PassthroughSubject<StateController, Never>()
-         let movieDetailsViewModel = MovieDetailsViewModelIpm(state: state, loadMovieDetailsUseCase: loadMovieDetailsCase)
-         let controller = MovieDetailsViewController(viewModel: movieDetailsViewModel)*/
-        return UIViewController()
+        let deviceDetailsUIView = DeviceDetailsView(deviceId: deviceItem.id)
+        let hostingDeviceDetailsController = UIHostingController(rootView: deviceDetailsUIView)
+        return hostingDeviceDetailsController
     }
 }

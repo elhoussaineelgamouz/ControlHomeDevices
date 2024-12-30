@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="devicesCollectionView" destination="CUW-wL-g3D" id="miL-TF-qBX"/>
                 <outlet property="roomsCollectionView" destination="UQE-CE-ShU" id="51T-4m-bqe"/>
+                <outlet property="smartLamHomeImage" destination="Hd1-Cc-7HY" id="YLP-us-Yte"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,8 +26,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Mk-Vu-UZe">
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
-                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CUW-wL-g3D">
-                            <rect key="frame" x="20" y="491" width="353" height="128"/>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CUW-wL-g3D">
+                            <rect key="frame" x="20" y="599" width="353" height="128"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="CUW-wL-g3D" secondAttribute="height" multiplier="353:128" id="Qqq-B0-MU8"/>
@@ -41,8 +42,8 @@
                                 <outlet property="delegate" destination="-1" id="uT8-cp-v5i"/>
                             </connections>
                         </collectionView>
-                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UQE-CE-ShU">
-                            <rect key="frame" x="20" y="279" width="353" height="141"/>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UQE-CE-ShU">
+                            <rect key="frame" x="20" y="387" width="353" height="141"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="UQE-CE-ShU" secondAttribute="height" multiplier="353:141" id="gU1-Tm-J18"/>
@@ -58,22 +59,22 @@
                             </connections>
                         </collectionView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rooms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mka-xw-SH2">
-                            <rect key="frame" x="20" y="238" width="53" height="21"/>
+                            <rect key="frame" x="20" y="346" width="53" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devices" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSf-BY-NU5">
-                            <rect key="frame" x="20" y="450" width="61" height="21"/>
+                            <rect key="frame" x="20" y="558" width="61" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hd1-Cc-7HY">
-                            <rect key="frame" x="98.666666666666686" y="40" width="196" height="158"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hd1-Cc-7HY">
+                            <rect key="frame" x="60.666666666666657" y="30" width="272" height="286"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="158" id="5pU-YZ-RzJ"/>
-                                <constraint firstAttribute="width" secondItem="Hd1-Cc-7HY" secondAttribute="height" multiplier="98:79" id="9pR-gU-h2D"/>
+                                <constraint firstAttribute="width" constant="272" id="b1Q-c9-VL1"/>
+                                <constraint firstAttribute="width" secondItem="Hd1-Cc-7HY" secondAttribute="height" multiplier="136:143" id="uO5-g7-CDC"/>
                             </constraints>
                         </imageView>
                     </subviews>
@@ -81,8 +82,8 @@
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="UQE-CE-ShU" secondAttribute="trailing" constant="20" id="9Mg-tI-IC5"/>
                         <constraint firstItem="mka-xw-SH2" firstAttribute="leading" secondItem="8Mk-Vu-UZe" secondAttribute="leading" constant="20" id="Csk-Hg-vrF"/>
-                        <constraint firstItem="mka-xw-SH2" firstAttribute="top" secondItem="Hd1-Cc-7HY" secondAttribute="bottom" constant="40" id="EY7-Uv-OSC"/>
-                        <constraint firstItem="Hd1-Cc-7HY" firstAttribute="top" secondItem="8Mk-Vu-UZe" secondAttribute="top" constant="40" id="Lmu-wf-nqo"/>
+                        <constraint firstItem="mka-xw-SH2" firstAttribute="top" secondItem="Hd1-Cc-7HY" secondAttribute="bottom" constant="30" id="EY7-Uv-OSC"/>
+                        <constraint firstItem="Hd1-Cc-7HY" firstAttribute="top" secondItem="8Mk-Vu-UZe" secondAttribute="top" constant="30" id="Lmu-wf-nqo"/>
                         <constraint firstItem="UQE-CE-ShU" firstAttribute="top" secondItem="mka-xw-SH2" secondAttribute="bottom" constant="20" id="MAL-iJ-ctS"/>
                         <constraint firstItem="CUW-wL-g3D" firstAttribute="top" secondItem="aSf-BY-NU5" secondAttribute="bottom" constant="20" id="dq6-jr-Btj"/>
                         <constraint firstItem="aSf-BY-NU5" firstAttribute="top" secondItem="UQE-CE-ShU" secondAttribute="bottom" constant="30" id="eDa-gV-fe7"/>
@@ -107,7 +108,7 @@
     </objects>
     <resources>
         <namedColor name="Background">
-            <color red="0.059000000357627869" green="0.20800000429153442" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.059000000357627869" green="0.20800000429153442" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

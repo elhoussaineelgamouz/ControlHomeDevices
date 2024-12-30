@@ -42,15 +42,11 @@ extension SensorType {
     }
 }
 
-struct Sensor: Hashable, Identifiable {
+struct Sensor: Codable, Identifiable{
     let id: Int
     let roomId: Int
     let data: Double
-    let type: SensorType
+   // let type: SensorType
 }
 
-extension Sensor {
-    var dataLabel: String {
-        String(format: "%.2f %@", data, type.unitLabel)
-    }
-}
+

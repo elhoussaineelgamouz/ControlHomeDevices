@@ -22,7 +22,7 @@ class RoomCollectionViewCell: UICollectionViewCell {
 
     func configure(with room: Room) {
         roomNameLabel.text = room.name
-        roomNumberDevicesLabel.text = "\(room.devices.count) device(s) connected"
+        //roomNumberDevicesLabel.text = "\(room.devices.count) device(s) connected"
     }
 
 }

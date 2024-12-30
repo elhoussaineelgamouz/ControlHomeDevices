@@ -10,56 +10,56 @@ import SwiftUI
 protocol DeviceDetailsViewControllerCoordinator {}
 
 struct DeviceDetailsView: View {
-    // Retrieve device information
-    let deviceName = UIDevice.current.name
-    let systemName = UIDevice.current.systemName
-    let systemVersion = UIDevice.current.systemVersion
-    let deviceModel = UIDevice.current.model
+    @StateObject private var deviceDetailsViewModel = DeviceDetailsViewModel()
+    @StateObject private var smartLampViewModel = SmartLampViewModel()
+
+    let deviceId: String
 
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Device Details")
-                .font(.largeTitle)
-                .fontWeight(.bold)
 
-            // Display each detail
-            HStack {
-                Text("Device Name:")
-                    .fontWeight(.semibold)
-                Spacer()
-                Text(deviceName)
-            }
-
-            HStack {
-                Text("System Name:")
-                    .fontWeight(.semibold)
-                Spacer()
-                Text(systemName)
-            }
-
-            HStack {
-                Text("System Version:")
-                    .fontWeight(.semibold)
-                Spacer()
-                Text(systemVersion)
-            }
-
-            HStack {
-                Text("Device Model:")
-                    .fontWeight(.semibold)
-                Spacer()
-                Text(deviceModel)
+        VStack {
+            if let device = deviceDetailsViewModel.device {
+                VStack(spacing: 20) {
+                    Text("Device Details")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                    SmartLampView(viewModel: smartLampViewModel)
+                    Button(action: {
+                        smartLampViewModel.toggleSmartLamp()
+                    }) {
+                        Text(smartLampViewModel.isOn ? "Turn Off" : "Turn On")
+                            .font(.headline)
+                            .padding()
+                            .frame(width: 200)
+                            .background(smartLampViewModel.isOn ? Color.red : Color.green)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                            .shadow(radius: 5)
+                    }
+                    //SmartThermostatView(viewModel: SmartThermostatViewModel())
+                }
+                .onAppear {
+                    smartLampViewModel.isOn = device.isOn
+                }
+            } else if let errorMessage = deviceDetailsViewModel.errorMessage {
+                Text("Error: \(errorMessage)")
+                    .foregroundColor(.red)
+                    .padding()
+            } else {
+                ProgressView("Loading...")
             }
         }
+        .onAppear {
+            deviceDetailsViewModel.fetchDeviceDetails(deviceId: deviceId)
+        }
         .padding()
-        .navigationTitle("Device Info")
     }
 }
 
 struct DeviceDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            DeviceDetailsView()
+            DeviceDetailsView(deviceId: "device2")
         }
     }
 }

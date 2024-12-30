@@ -8,3 +8,10 @@
 "control_Lamp_app" = "Control Lamp APP";
 "welcome_message" = "Welcome to MyApp!";
 "login_button" = "Log In";
+"home.rooms" = "Rooms";
+"home.devices" = "Devices";
+"login.email" = "Email";
+"login.password" = "Password";
+"login.button.login" = "Login";
+"login.title" = "Smart Lamp Control";
+

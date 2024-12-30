@@ -11,9 +11,9 @@ class DeviceCollectionViewCell: UICollectionViewCell {
 
     static let reuseIdentifier = "DeviceCell"
 
-    @IBOutlet weak var roomIconImage: UIImageView!
-    @IBOutlet weak var roomNameLabel: UILabel!
-    @IBOutlet weak var roomNumberDevicesLabel: UILabel!
+    @IBOutlet weak var deviceIconImage: UIImageView!
+    @IBOutlet weak var deviceNameLabel: UILabel!
+    @IBOutlet weak var deviceNumberDevicesLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,7 +21,7 @@ class DeviceCollectionViewCell: UICollectionViewCell {
     }
 
     func configure(with device: Device) {
-
+        deviceNameLabel.text = device.name
     }
 
 }

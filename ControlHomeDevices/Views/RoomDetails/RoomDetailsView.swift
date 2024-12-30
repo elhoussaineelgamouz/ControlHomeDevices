@@ -21,13 +21,13 @@ struct RoomDetailsView: View {
             ZStack (alignment: .top) {
                 ScrollView {
                     VStack {
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack {
+                        /*ScrollView(.horizontal, showsIndicators: false) {
+                           HStack {
                                 ForEach(room.sensors.indices) { index in
                                     let sensor = room.sensors[index]
                                     SensorDataCardView(
-                                        data: "\(floor(sensor.data * counterProgress)) \(sensor.type.unitLabel)",
-                                        subtitle: sensor.type.name,
+                                        data: "\(floor(sensor.data * counterProgress)) \("testest")",
+                                        subtitle: "sensor.type.name",
                                         background: index.isMultiple(of: 2)
                                         ? Color.dataBlue
                                         : Color.dataOrange
@@ -49,7 +49,7 @@ struct RoomDetailsView: View {
                         }
                         .padding(.leading, -proxy.safeAreaInsets.leading)
                         .padding(.trailing, -proxy.safeAreaInsets.trailing)
-                        .ignoresSafeArea()
+                        .ignoresSafeArea()*/
 
                         Text("Power consumption")
                             .foregroundColor(.fontColor)
@@ -58,11 +58,6 @@ struct RoomDetailsView: View {
                             .padding(.top)
                             .padding(.leading, 32 + proxy.safeAreaInsets.leading)
                             .padding(.trailing, 32 + proxy.safeAreaInsets.trailing)
-
-                        /*PowerChartView(
-                         lastWeekData: room.consumption[7..<14].map { CGFloat($0) },
-                         currentWeekData: room.consumption[0..<7].map { CGFloat($0) }
-                         )*/
                             .padding(.leading, 32 + proxy.safeAreaInsets.leading)
                             .padding(.trailing, 32 + proxy.safeAreaInsets.trailing)
 
@@ -74,11 +69,11 @@ struct RoomDetailsView: View {
                             .padding(.leading, 32 + proxy.safeAreaInsets.leading)
                             .padding(.trailing, 32 + proxy.safeAreaInsets.trailing)
 
-                        ForEach(room.devices) { device in
+                       /* ForEach(room.devices) { device in
                             DeviceCardView(device: device, room: room)
                                 .padding(.leading, 32 + proxy.safeAreaInsets.leading)
                                 .padding(.trailing, 32 + proxy.safeAreaInsets.trailing)
-                        }
+                        }*/
                     }
                     .padding(.leading, proxy.safeAreaInsets.leading)
                     .padding(.trailing, proxy.safeAreaInsets.trailing)

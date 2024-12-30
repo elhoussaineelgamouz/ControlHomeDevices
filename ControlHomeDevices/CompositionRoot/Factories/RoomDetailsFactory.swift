@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import SwiftUI
 
 protocol RoomDetailsFactory {
     func makeModule(coordinator: RoomDetailsViewControllerCoordinator, roomItem: Room) -> UIViewController
@@ -14,7 +15,7 @@ protocol RoomDetailsFactory {
 
 struct RoomDetailsFactoryImp: RoomDetailsFactory {
     func makeModule(coordinator: RoomDetailsViewControllerCoordinator, roomItem: Room) -> UIViewController {
-        /*let apiClientService = ApiClientServiceImp()
+        /* let apiClientService = ApiClientServiceImp()
          guard let movieId = movieItem.id else {
          return UIViewController()
          }
@@ -22,8 +23,12 @@ struct RoomDetailsFactoryImp: RoomDetailsFactory {
          let loadMovieDetailsCase = LoadMovieDetailsUseCaseImp(movieDetailsRepository: movieDetailsRepository)
          let state = PassthroughSubject<StateController, Never>()
          let movieDetailsViewModel = MovieDetailsViewModelIpm(state: state, loadMovieDetailsUseCase: loadMovieDetailsCase)
-         let controller = MovieDetailsViewController(viewModel: movieDetailsViewModel)*/
-        return UIViewController()
+         let controller = MovieDetailsViewController(viewModel: movieDetailsViewModel)
+         return UIViewController()*/
+
+        let roomDetailsUIView = RoomDetailsView(room: roomItem)
+        let hostingRoomDetailsController = UIHostingController(rootView: roomDetailsUIView)
+        return hostingRoomDetailsController
     }
 }
 

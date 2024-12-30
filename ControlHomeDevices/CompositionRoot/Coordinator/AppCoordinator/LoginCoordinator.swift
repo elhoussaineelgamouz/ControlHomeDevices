@@ -25,6 +25,8 @@ final class LoginCoordinator: Coordinator {
 
 extension LoginCoordinator: LoginFactoryControllerCoordinator {
     func didSelectLoginAction() {
-        print("lhamdolilah")
+        let homeFactory = HomeFactoryImp()
+        let homeCoordinator = HomeCoordinator(navigation: navigation, homeFactory: homeFactory)
+        homeCoordinator.start()
     }
 }

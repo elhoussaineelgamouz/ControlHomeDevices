@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061B888E6F640C4F48AF16D4 /* Pods_ControlHomeDevicesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FB144BCF97BCB78A5BB3A5 /* Pods_ControlHomeDevicesTests.framework */; };
 		107C41CB2D1F447600CD1718 /* AppFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41CA2D1F447600CD1718 /* AppFactory.swift */; };
 		107C41CD2D1F44E600CD1718 /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41CC2D1F44E600CD1718 /* HomeFactory.swift */; };
 		107C41CF2D1F467100CD1718 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41CE2D1F467100CD1718 /* HomeCoordinator.swift */; };
@@ -27,6 +28,11 @@
 		107C41F02D20452100CD1718 /* LoginFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41EF2D20452100CD1718 /* LoginFactory.swift */; };
 		107C41F22D20453B00CD1718 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41F12D20453B00CD1718 /* LoginCoordinator.swift */; };
 		107C41F42D20497100CD1718 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41F32D20497100CD1718 /* LoginViewModel.swift */; };
+		107C41F62D20960C00CD1718 /* RoomDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41F52D20960C00CD1718 /* RoomDetailsViewModel.swift */; };
+		107C41F92D20964B00CD1718 /* DeviceDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41F82D20964B00CD1718 /* DeviceDetailsViewModel.swift */; };
+		107C41FD2D20A8A500CD1718 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41FC2D20A8A500CD1718 /* UIButton+Extensions.swift */; };
+		107C41FF2D21B7EF00CD1718 /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41FE2D21B7EF00CD1718 /* AuthenticationModel.swift */; };
+		107C42022D21B8DE00CD1718 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C42012D21B8DE00CD1718 /* AuthenticationViewModel.swift */; };
 		10B8A1CD2D1D64160097FF38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A1CC2D1D64160097FF38 /* AppDelegate.swift */; };
 		10B8A1CF2D1D64160097FF38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A1CE2D1D64160097FF38 /* SceneDelegate.swift */; };
 		10B8A1D12D1D64160097FF38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A1D02D1D64160097FF38 /* ViewController.swift */; };
@@ -56,9 +62,13 @@
 		10B8A25B2D1EB8810097FF38 /* DeviceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B8A2592D1EB8810097FF38 /* DeviceCollectionViewCell.xib */; };
 		10B8A2622D1EF7E40097FF38 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A2612D1EF7E40097FF38 /* Coordinator.swift */; };
 		10B8A2642D1EF7FD0097FF38 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A2632D1EF7FD0097FF38 /* AppCoordinator.swift */; };
-		532E912BF1D9FFBE8FAC4BB2 /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D2B5E9339BB02F7B80FE1D /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework */; };
-		C4F45FC12A18ABCC8F33E20B /* Pods_ControlHomeDevices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD774D02E5F548C97C69052 /* Pods_ControlHomeDevices.framework */; };
-		EA4C5256E4DEBE4C6FBBC7D9 /* Pods_ControlHomeDevicesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38031FFAF491C8F75B2B2F46 /* Pods_ControlHomeDevicesTests.framework */; };
+		10F756382D22AF8700D7D92D /* SmartLampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F756372D22AF8700D7D92D /* SmartLampView.swift */; };
+		10F7563A2D22B00300D7D92D /* SmartLampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F756392D22B00300D7D92D /* SmartLampViewModel.swift */; };
+		10F7563E2D22B46300D7D92D /* SmartThermostatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F7563D2D22B46300D7D92D /* SmartThermostatView.swift */; };
+		10F756402D22B4C400D7D92D /* SmartThermostatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F7563F2D22B4C400D7D92D /* SmartThermostatViewModel.swift */; };
+		10F756432D22DA0200D7D92D /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F756422D22DA0200D7D92D /* FirebaseService.swift */; };
+		C5DEB52CD7077F3DE404899E /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA5F84EA33CC2994BF338D6 /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework */; };
+		E6C6EC3EEA0A7E22C78E7329 /* Pods_ControlHomeDevices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE1852F744BC15F3701C420 /* Pods_ControlHomeDevices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +89,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04FB144BCF97BCB78A5BB3A5 /* Pods_ControlHomeDevicesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ControlHomeDevicesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		107C41CA2D1F447600CD1718 /* AppFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactory.swift; sourceTree = "<group>"; };
 		107C41CC2D1F44E600CD1718 /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
 		107C41CE2D1F467100CD1718 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
@@ -99,6 +110,11 @@
 		107C41EF2D20452100CD1718 /* LoginFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFactory.swift; sourceTree = "<group>"; };
 		107C41F12D20453B00CD1718 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		107C41F32D20497100CD1718 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		107C41F52D20960C00CD1718 /* RoomDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailsViewModel.swift; sourceTree = "<group>"; };
+		107C41F82D20964B00CD1718 /* DeviceDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailsViewModel.swift; sourceTree = "<group>"; };
+		107C41FC2D20A8A500CD1718 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		107C41FE2D21B7EF00CD1718 /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
+		107C42012D21B8DE00CD1718 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		10B8A1C92D1D64160097FF38 /* ControlHomeDevices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControlHomeDevices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B8A1CC2D1D64160097FF38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10B8A1CE2D1D64160097FF38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,15 +152,19 @@
 		10B8A2592D1EB8810097FF38 /* DeviceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceCollectionViewCell.xib; sourceTree = "<group>"; };
 		10B8A2612D1EF7E40097FF38 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		10B8A2632D1EF7FD0097FF38 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		1BCC06A483632A9BA236CF42 /* Pods-ControlHomeDevices-ControlHomeDevicesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevices-ControlHomeDevicesUITests.release.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevices-ControlHomeDevicesUITests/Pods-ControlHomeDevices-ControlHomeDevicesUITests.release.xcconfig"; sourceTree = "<group>"; };
-		38031FFAF491C8F75B2B2F46 /* Pods_ControlHomeDevicesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ControlHomeDevicesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		467CC94B1F99EB16D5D85BF4 /* Pods-ControlHomeDevicesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevicesTests.release.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevicesTests/Pods-ControlHomeDevicesTests.release.xcconfig"; sourceTree = "<group>"; };
-		5FD774D02E5F548C97C69052 /* Pods_ControlHomeDevices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ControlHomeDevices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		62D2B5E9339BB02F7B80FE1D /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D121CB8999D50D4D06C1C63 /* Pods-ControlHomeDevicesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevicesTests.debug.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevicesTests/Pods-ControlHomeDevicesTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8727809FE5B75D0BC4DBB721 /* Pods-ControlHomeDevices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevices.debug.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevices/Pods-ControlHomeDevices.debug.xcconfig"; sourceTree = "<group>"; };
-		B4BD981A13BD518CC9E6F406 /* Pods-ControlHomeDevices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevices.release.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevices/Pods-ControlHomeDevices.release.xcconfig"; sourceTree = "<group>"; };
-		C4FE8CE9159D387FF91353C3 /* Pods-ControlHomeDevices-ControlHomeDevicesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevices-ControlHomeDevicesUITests.debug.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevices-ControlHomeDevicesUITests/Pods-ControlHomeDevices-ControlHomeDevicesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		10F756372D22AF8700D7D92D /* SmartLampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartLampView.swift; sourceTree = "<group>"; };
+		10F756392D22B00300D7D92D /* SmartLampViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartLampViewModel.swift; sourceTree = "<group>"; };
+		10F7563D2D22B46300D7D92D /* SmartThermostatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartThermostatView.swift; sourceTree = "<group>"; };
+		10F7563F2D22B4C400D7D92D /* SmartThermostatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartThermostatViewModel.swift; sourceTree = "<group>"; };
+		10F756422D22DA0200D7D92D /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		6BA5F84EA33CC2994BF338D6 /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF511375626F5A869DB90F4 /* Pods-ControlHomeDevicesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevicesTests.release.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevicesTests/Pods-ControlHomeDevicesTests.release.xcconfig"; sourceTree = "<group>"; };
+		940BA78142C5846DE88EE958 /* Pods-ControlHomeDevices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevices.debug.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevices/Pods-ControlHomeDevices.debug.xcconfig"; sourceTree = "<group>"; };
+		94463D89BE93C573A47FE884 /* Pods-ControlHomeDevices-ControlHomeDevicesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevices-ControlHomeDevicesUITests.debug.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevices-ControlHomeDevicesUITests/Pods-ControlHomeDevices-ControlHomeDevicesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A33020B08A9D342C07B94F0D /* Pods-ControlHomeDevicesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevicesTests.debug.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevicesTests/Pods-ControlHomeDevicesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BBDABE0FD8A2E00386C5D35F /* Pods-ControlHomeDevices-ControlHomeDevicesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevices-ControlHomeDevicesUITests.release.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevices-ControlHomeDevicesUITests/Pods-ControlHomeDevices-ControlHomeDevicesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DBB2787563A5DF754B34A85E /* Pods-ControlHomeDevices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevices.release.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevices/Pods-ControlHomeDevices.release.xcconfig"; sourceTree = "<group>"; };
+		FFE1852F744BC15F3701C420 /* Pods_ControlHomeDevices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ControlHomeDevices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4F45FC12A18ABCC8F33E20B /* Pods_ControlHomeDevices.framework in Frameworks */,
+				E6C6EC3EEA0A7E22C78E7329 /* Pods_ControlHomeDevices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA4C5256E4DEBE4C6FBBC7D9 /* Pods_ControlHomeDevicesTests.framework in Frameworks */,
+				061B888E6F640C4F48AF16D4 /* Pods_ControlHomeDevicesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				532E912BF1D9FFBE8FAC4BB2 /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework in Frameworks */,
+				C5DEB52CD7077F3DE404899E /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +232,39 @@
 			path = Styles;
 			sourceTree = "<group>";
 		};
+		107C41F72D20962800CD1718 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				107C41F52D20960C00CD1718 /* RoomDetailsViewModel.swift */,
+				107C41F82D20964B00CD1718 /* DeviceDetailsViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		107C41FA2D20A87700CD1718 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				107C41FB2D20A88900CD1718 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		107C41FB2D20A88900CD1718 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				107C41FC2D20A8A500CD1718 /* UIButton+Extensions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		107C42002D21B87B00CD1718 /* Authentification */ = {
+			isa = PBXGroup;
+			children = (
+				107C42012D21B8DE00CD1718 /* AuthenticationViewModel.swift */,
+			);
+			path = Authentification;
+			sourceTree = "<group>";
+		};
 		10B8A1C02D1D64160097FF38 = {
 			isa = PBXGroup;
 			children = (
@@ -220,7 +273,7 @@
 				10B8A1EC2D1D641B0097FF38 /* ControlHomeDevicesUITests */,
 				10B8A1CA2D1D64160097FF38 /* Products */,
 				92F6A829F6ED3DBAE678B11F /* Pods */,
-				D1DB8503523CC4E04CDBC20C /* Frameworks */,
+				CB6C5CCBC5A4D84C22A2A8A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -237,6 +290,7 @@
 		10B8A1CB2D1D64160097FF38 /* ControlHomeDevices */ = {
 			isa = PBXGroup;
 			children = (
+				107C41FA2D20A87700CD1718 /* Extensions */,
 				107C41E42D1F569900CD1718 /* Styles */,
 				10B8A25C2D1EF77A0097FF38 /* CompositionRoot */,
 				10B8A2012D1D659F0097FF38 /* App */,
@@ -292,6 +346,7 @@
 				10B8A24F2D1EA1340097FF38 /* Room.swift */,
 				107C41EB2D203F2C00CD1718 /* ModelData.swift */,
 				107C41ED2D203F5B00CD1718 /* Sensor.swift */,
+				107C41FE2D21B7EF00CD1718 /* AuthenticationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -299,6 +354,8 @@
 		10B8A1FE2D1D65710097FF38 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				107C42002D21B87B00CD1718 /* Authentification */,
+				107C41F72D20962800CD1718 /* Details */,
 				10B8A20D2D1D7B240097FF38 /* Login */,
 				10B8A20C2D1D7B160097FF38 /* Home */,
 			);
@@ -308,6 +365,7 @@
 		10B8A1FF2D1D657C0097FF38 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				10F756412D22D9E600D7D92D /* Firebase */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -345,6 +403,8 @@
 		10B8A2032D1D65C10097FF38 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				10F7563C2D22B44200D7D92D /* SmartThermostatView */,
+				10F7563B2D22B00B00D7D92D /* SmartLampView */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -468,25 +528,51 @@
 			path = AppCoordinator;
 			sourceTree = "<group>";
 		};
+		10F7563B2D22B00B00D7D92D /* SmartLampView */ = {
+			isa = PBXGroup;
+			children = (
+				10F756372D22AF8700D7D92D /* SmartLampView.swift */,
+				10F756392D22B00300D7D92D /* SmartLampViewModel.swift */,
+			);
+			path = SmartLampView;
+			sourceTree = "<group>";
+		};
+		10F7563C2D22B44200D7D92D /* SmartThermostatView */ = {
+			isa = PBXGroup;
+			children = (
+				10F7563D2D22B46300D7D92D /* SmartThermostatView.swift */,
+				10F7563F2D22B4C400D7D92D /* SmartThermostatViewModel.swift */,
+			);
+			path = SmartThermostatView;
+			sourceTree = "<group>";
+		};
+		10F756412D22D9E600D7D92D /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				10F756422D22DA0200D7D92D /* FirebaseService.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		92F6A829F6ED3DBAE678B11F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8727809FE5B75D0BC4DBB721 /* Pods-ControlHomeDevices.debug.xcconfig */,
-				B4BD981A13BD518CC9E6F406 /* Pods-ControlHomeDevices.release.xcconfig */,
-				C4FE8CE9159D387FF91353C3 /* Pods-ControlHomeDevices-ControlHomeDevicesUITests.debug.xcconfig */,
-				1BCC06A483632A9BA236CF42 /* Pods-ControlHomeDevices-ControlHomeDevicesUITests.release.xcconfig */,
-				7D121CB8999D50D4D06C1C63 /* Pods-ControlHomeDevicesTests.debug.xcconfig */,
-				467CC94B1F99EB16D5D85BF4 /* Pods-ControlHomeDevicesTests.release.xcconfig */,
+				940BA78142C5846DE88EE958 /* Pods-ControlHomeDevices.debug.xcconfig */,
+				DBB2787563A5DF754B34A85E /* Pods-ControlHomeDevices.release.xcconfig */,
+				94463D89BE93C573A47FE884 /* Pods-ControlHomeDevices-ControlHomeDevicesUITests.debug.xcconfig */,
+				BBDABE0FD8A2E00386C5D35F /* Pods-ControlHomeDevices-ControlHomeDevicesUITests.release.xcconfig */,
+				A33020B08A9D342C07B94F0D /* Pods-ControlHomeDevicesTests.debug.xcconfig */,
+				7CF511375626F5A869DB90F4 /* Pods-ControlHomeDevicesTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		D1DB8503523CC4E04CDBC20C /* Frameworks */ = {
+		CB6C5CCBC5A4D84C22A2A8A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5FD774D02E5F548C97C69052 /* Pods_ControlHomeDevices.framework */,
-				62D2B5E9339BB02F7B80FE1D /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework */,
-				38031FFAF491C8F75B2B2F46 /* Pods_ControlHomeDevicesTests.framework */,
+				FFE1852F744BC15F3701C420 /* Pods_ControlHomeDevices.framework */,
+				6BA5F84EA33CC2994BF338D6 /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework */,
+				04FB144BCF97BCB78A5BB3A5 /* Pods_ControlHomeDevicesTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -498,12 +584,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10B8A1F32D1D641B0097FF38 /* Build configuration list for PBXNativeTarget "ControlHomeDevices" */;
 			buildPhases = (
-				94E72A66DD68E818D8DFC689 /* [CP] Check Pods Manifest.lock */,
+				08E50A3C6871DB5CCFE3D090 /* [CP] Check Pods Manifest.lock */,
 				10B8A1C52D1D64160097FF38 /* Sources */,
 				10B8A1C62D1D64160097FF38 /* Frameworks */,
 				10B8A1C72D1D64160097FF38 /* Resources */,
 				10B8A2202D1DA6C00097FF38 /* Swift Gen */,
-				05850D705D5703C7C8AC6B46 /* [CP] Embed Pods Frameworks */,
+				1A22ECEA736C804ADAEADB52 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -518,7 +604,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10B8A1F62D1D641B0097FF38 /* Build configuration list for PBXNativeTarget "ControlHomeDevicesTests" */;
 			buildPhases = (
-				71ABD6C4EB225C3436B0978F /* [CP] Check Pods Manifest.lock */,
+				032A165A2A20CA359DA56420 /* [CP] Check Pods Manifest.lock */,
 				10B8A1DB2D1D641B0097FF38 /* Sources */,
 				10B8A1DC2D1D641B0097FF38 /* Frameworks */,
 				10B8A1DD2D1D641B0097FF38 /* Resources */,
@@ -537,11 +623,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10B8A1F92D1D641B0097FF38 /* Build configuration list for PBXNativeTarget "ControlHomeDevicesUITests" */;
 			buildPhases = (
-				EF5679238A05D157F0989C2A /* [CP] Check Pods Manifest.lock */,
+				17454D635A1B945EDFC786F7 /* [CP] Check Pods Manifest.lock */,
 				10B8A1E52D1D641B0097FF38 /* Sources */,
 				10B8A1E62D1D641B0097FF38 /* Frameworks */,
 				10B8A1E72D1D641B0097FF38 /* Resources */,
-				4CF8F2BB91F5B1C3C35786C8 /* [CP] Embed Pods Frameworks */,
+				9C4924B8422B9DB9D335D980 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -633,59 +719,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05850D705D5703C7C8AC6B46 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ControlHomeDevices/Pods-ControlHomeDevices-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ControlHomeDevices/Pods-ControlHomeDevices-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ControlHomeDevices/Pods-ControlHomeDevices-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		10B8A2202D1DA6C00097FF38 /* Swift Gen */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Swift Gen";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftgen >& /dev/null; then\n  swiftgen config run --config ControlHomeDevices/App/swiftgen.config.yml\nelse\n  echo \"error: SwiftGen not installed, download from https://github.com/SwiftGen/SwiftGen\"\nfi\n\n";
-		};
-		4CF8F2BB91F5B1C3C35786C8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ControlHomeDevices-ControlHomeDevicesUITests/Pods-ControlHomeDevices-ControlHomeDevicesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ControlHomeDevices-ControlHomeDevicesUITests/Pods-ControlHomeDevices-ControlHomeDevicesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ControlHomeDevices-ControlHomeDevicesUITests/Pods-ControlHomeDevices-ControlHomeDevicesUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		71ABD6C4EB225C3436B0978F /* [CP] Check Pods Manifest.lock */ = {
+		032A165A2A20CA359DA56420 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -707,7 +741,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		94E72A66DD68E818D8DFC689 /* [CP] Check Pods Manifest.lock */ = {
+		08E50A3C6871DB5CCFE3D090 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -729,7 +763,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EF5679238A05D157F0989C2A /* [CP] Check Pods Manifest.lock */ = {
+		10B8A2202D1DA6C00097FF38 /* Swift Gen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Gen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftgen >& /dev/null; then\n  swiftgen config run --config ControlHomeDevices/App/swiftgen.config.yml\nelse\n  echo \"error: SwiftGen not installed, download from https://github.com/SwiftGen/SwiftGen\"\nfi\n\n";
+		};
+		17454D635A1B945EDFC786F7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -751,6 +803,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1A22ECEA736C804ADAEADB52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ControlHomeDevices/Pods-ControlHomeDevices-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ControlHomeDevices/Pods-ControlHomeDevices-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ControlHomeDevices/Pods-ControlHomeDevices-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C4924B8422B9DB9D335D980 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ControlHomeDevices-ControlHomeDevicesUITests/Pods-ControlHomeDevices-ControlHomeDevicesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ControlHomeDevices-ControlHomeDevicesUITests/Pods-ControlHomeDevices-ControlHomeDevicesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ControlHomeDevices-ControlHomeDevicesUITests/Pods-ControlHomeDevices-ControlHomeDevicesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -758,9 +844,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				107C41F62D20960C00CD1718 /* RoomDetailsViewModel.swift in Sources */,
 				107C41F22D20453B00CD1718 /* LoginCoordinator.swift in Sources */,
 				10B8A1D12D1D64160097FF38 /* ViewController.swift in Sources */,
 				107C41EE2D203F5B00CD1718 /* Sensor.swift in Sources */,
+				10F7563A2D22B00300D7D92D /* SmartLampViewModel.swift in Sources */,
 				107C41EA2D203BC200CD1718 /* Colors.swift in Sources */,
 				107C41DA2D1F519D00CD1718 /* RoomDetailsView.swift in Sources */,
 				107C41DF2D1F52EE00CD1718 /* DeviceDetailsView.swift in Sources */,
@@ -776,12 +864,18 @@
 				107C41EC2D203F2C00CD1718 /* ModelData.swift in Sources */,
 				107C41F02D20452100CD1718 /* LoginFactory.swift in Sources */,
 				107C41CB2D1F447600CD1718 /* AppFactory.swift in Sources */,
+				107C41FD2D20A8A500CD1718 /* UIButton+Extensions.swift in Sources */,
 				10B8A2052D1D65E70097FF38 /* Constants.swift in Sources */,
 				107C41D72D1F4BA400CD1718 /* DeviceDetailsFactory.swift in Sources */,
 				10B8A24D2D1E9FC10097FF38 /* HomeViewController.swift in Sources */,
 				10B8A2622D1EF7E40097FF38 /* Coordinator.swift in Sources */,
+				107C41F92D20964B00CD1718 /* DeviceDetailsViewModel.swift in Sources */,
 				10B8A2522D1EA41D0097FF38 /* HomeViewModel.swift in Sources */,
 				107C41CD2D1F44E600CD1718 /* HomeFactory.swift in Sources */,
+				10F756382D22AF8700D7D92D /* SmartLampView.swift in Sources */,
+				10F7563E2D22B46300D7D92D /* SmartThermostatView.swift in Sources */,
+				107C41FF2D21B7EF00CD1718 /* AuthenticationModel.swift in Sources */,
+				10F756432D22DA0200D7D92D /* FirebaseService.swift in Sources */,
 				107C41D12D1F4B4700CD1718 /* RoomDetailsCoordinator.swift in Sources */,
 				10B8A2482D1E9D320097FF38 /* DeviceType.swift in Sources */,
 				107C41D52D1F4B9600CD1718 /* RoomDetailsFactory.swift in Sources */,
@@ -790,9 +884,11 @@
 				10B8A2462D1E9CBD0097FF38 /* Device.swift in Sources */,
 				10B8A25A2D1EB8810097FF38 /* DeviceCollectionViewCell.swift in Sources */,
 				10B8A2442D1DF0420097FF38 /* Strings.swift in Sources */,
+				107C42022D21B8DE00CD1718 /* AuthenticationViewModel.swift in Sources */,
 				10B8A2642D1EF7FD0097FF38 /* AppCoordinator.swift in Sources */,
 				10B8A2502D1EA1340097FF38 /* Room.swift in Sources */,
 				10B8A2562D1EB8690097FF38 /* RoomCollectionViewCell.swift in Sources */,
+				10F756402D22B4C400D7D92D /* SmartThermostatViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -983,7 +1079,7 @@
 		};
 		10B8A1F42D1D641B0097FF38 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8727809FE5B75D0BC4DBB721 /* Pods-ControlHomeDevices.debug.xcconfig */;
+			baseConfigurationReference = 940BA78142C5846DE88EE958 /* Pods-ControlHomeDevices.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOLS = NO;
@@ -1014,7 +1110,7 @@
 		};
 		10B8A1F52D1D641B0097FF38 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4BD981A13BD518CC9E6F406 /* Pods-ControlHomeDevices.release.xcconfig */;
+			baseConfigurationReference = DBB2787563A5DF754B34A85E /* Pods-ControlHomeDevices.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOLS = NO;
@@ -1045,7 +1141,7 @@
 		};
 		10B8A1F72D1D641B0097FF38 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D121CB8999D50D4D06C1C63 /* Pods-ControlHomeDevicesTests.debug.xcconfig */;
+			baseConfigurationReference = A33020B08A9D342C07B94F0D /* Pods-ControlHomeDevicesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1065,7 +1161,7 @@
 		};
 		10B8A1F82D1D641B0097FF38 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 467CC94B1F99EB16D5D85BF4 /* Pods-ControlHomeDevicesTests.release.xcconfig */;
+			baseConfigurationReference = 7CF511375626F5A869DB90F4 /* Pods-ControlHomeDevicesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1085,7 +1181,7 @@
 		};
 		10B8A1FA2D1D641B0097FF38 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4FE8CE9159D387FF91353C3 /* Pods-ControlHomeDevices-ControlHomeDevicesUITests.debug.xcconfig */;
+			baseConfigurationReference = 94463D89BE93C573A47FE884 /* Pods-ControlHomeDevices-ControlHomeDevicesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1103,7 +1199,7 @@
 		};
 		10B8A1FB2D1D641B0097FF38 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BCC06A483632A9BA236CF42 /* Pods-ControlHomeDevices-ControlHomeDevicesUITests.release.xcconfig */;
+			baseConfigurationReference = BBDABE0FD8A2E00386C5D35F /* Pods-ControlHomeDevices-ControlHomeDevicesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
