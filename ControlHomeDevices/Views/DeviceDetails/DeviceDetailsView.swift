@@ -57,12 +57,13 @@ struct DeviceDetailsView: View {
             .onAppear {
                 deviceDetailsViewModel.fetchDeviceDetails(deviceId: deviceId)
             }
+            .navigationTitle("")
+            .navigationBarTitleDisplayMode(.inline)
             .padding()
             .background(Color.mainBackground)
         }
         .ignoresSafeArea()
     }
-
 }
 
 

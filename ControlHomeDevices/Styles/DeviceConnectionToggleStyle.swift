@@ -20,7 +20,6 @@ struct DeviceConnectionToggleStyle: ToggleStyle {
         }
         .frame(width: 60, height: 30)
         .onTapGesture {
-            //configuration.isOn.toggle()
         }
     }
 }

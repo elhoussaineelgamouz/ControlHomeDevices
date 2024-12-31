@@ -4,6 +4,11 @@
 <dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
+        <key>UIAppFonts</key>
+        <array>
+            <string>Movistar-Regular.ttf</string>
+            <string>Movistar-Regular.ttf</string>
+        </array>
         <key>NSFaceIDUsageDescription</key>
         <string>This app uses Face ID for authentication.</string>
 		<key>UIApplicationSupportsMultipleScenes</key>

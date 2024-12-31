@@ -6,9 +6,13 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Movistar-Bold.ttf">
+            <string>ApercuMovistar-Bold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ControlHomeDevices" customModuleProvider="target">
             <connections>
@@ -28,7 +32,7 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CUW-wL-g3D">
-                            <rect key="frame" x="20" y="586" width="353" height="128"/>
+                            <rect key="frame" x="20" y="577.33333333333337" width="353" height="128"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="CUW-wL-g3D" secondAttribute="height" multiplier="353:128" id="Qqq-B0-MU8"/>
@@ -44,7 +48,7 @@
                             </connections>
                         </collectionView>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UQE-CE-ShU">
-                            <rect key="frame" x="20" y="387" width="353" height="128"/>
+                            <rect key="frame" x="20" y="382.66666666666669" width="353" height="128"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="UQE-CE-ShU" secondAttribute="height" multiplier="353:128" id="gSv-XP-0MW"/>
@@ -60,14 +64,14 @@
                             </connections>
                         </collectionView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rooms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mka-xw-SH2">
-                            <rect key="frame" x="20" y="346" width="53" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <rect key="frame" x="19.999999999999996" y="346" width="55.666666666666657" height="21.666666666666686"/>
+                            <fontDescription key="fontDescription" name="ApercuMovistar-Bold" family="Apercu Movistar" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devices" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSf-BY-NU5">
-                            <rect key="frame" x="20" y="545" width="61" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <rect key="frame" x="20" y="540.66666666666663" width="63" height="21.666666666666629"/>
+                            <fontDescription key="fontDescription" name="ApercuMovistar-Bold" family="Apercu Movistar" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -79,14 +83,14 @@
                             </constraints>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="UQE-CE-ShU" secondAttribute="trailing" constant="20" id="9Mg-tI-IC5"/>
                         <constraint firstItem="mka-xw-SH2" firstAttribute="leading" secondItem="8Mk-Vu-UZe" secondAttribute="leading" constant="20" id="Csk-Hg-vrF"/>
                         <constraint firstItem="mka-xw-SH2" firstAttribute="top" secondItem="Hd1-Cc-7HY" secondAttribute="bottom" constant="30" id="EY7-Uv-OSC"/>
                         <constraint firstItem="Hd1-Cc-7HY" firstAttribute="top" secondItem="8Mk-Vu-UZe" secondAttribute="top" constant="30" id="Lmu-wf-nqo"/>
-                        <constraint firstItem="UQE-CE-ShU" firstAttribute="top" secondItem="mka-xw-SH2" secondAttribute="bottom" constant="20" id="MAL-iJ-ctS"/>
-                        <constraint firstItem="CUW-wL-g3D" firstAttribute="top" secondItem="aSf-BY-NU5" secondAttribute="bottom" constant="20" id="dq6-jr-Btj"/>
+                        <constraint firstItem="UQE-CE-ShU" firstAttribute="top" secondItem="mka-xw-SH2" secondAttribute="bottom" constant="15" id="MAL-iJ-ctS"/>
+                        <constraint firstItem="CUW-wL-g3D" firstAttribute="top" secondItem="aSf-BY-NU5" secondAttribute="bottom" constant="15" id="dq6-jr-Btj"/>
                         <constraint firstItem="aSf-BY-NU5" firstAttribute="top" secondItem="UQE-CE-ShU" secondAttribute="bottom" constant="30" id="eDa-gV-fe7"/>
                         <constraint firstItem="CUW-wL-g3D" firstAttribute="leading" secondItem="8Mk-Vu-UZe" secondAttribute="leading" constant="20" id="frZ-tn-DrO"/>
                         <constraint firstItem="aSf-BY-NU5" firstAttribute="leading" secondItem="8Mk-Vu-UZe" secondAttribute="leading" constant="20" id="gSf-qY-DNV"/>
@@ -111,8 +115,5 @@
         <namedColor name="Background">
             <color red="0.059000000357627869" green="0.20800000429153442" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>

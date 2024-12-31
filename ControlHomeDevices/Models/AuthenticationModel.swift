@@ -13,7 +13,6 @@ class AuthenticationModel {
     func authenticateUser(completion: @escaping (Bool, String?) -> Void) {
         let context = LAContext()
         var error: NSError?
-
         // Check if biometric authentication is available
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
             // Start biometric authentication

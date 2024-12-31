@@ -16,10 +16,7 @@
 		107C41D52D1F4B9600CD1718 /* RoomDetailsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41D42D1F4B9600CD1718 /* RoomDetailsFactory.swift */; };
 		107C41D72D1F4BA400CD1718 /* DeviceDetailsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41D62D1F4BA400CD1718 /* DeviceDetailsFactory.swift */; };
 		107C41DA2D1F519D00CD1718 /* RoomDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41D92D1F519D00CD1718 /* RoomDetailsView.swift */; };
-		107C41DC2D1F51FD00CD1718 /* SensorDataCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41DB2D1F51FD00CD1718 /* SensorDataCardView.swift */; };
 		107C41DF2D1F52EE00CD1718 /* DeviceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41DE2D1F52EE00CD1718 /* DeviceDetailsView.swift */; };
-		107C41E12D1F557000CD1718 /* RoomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41E02D1F557000CD1718 /* RoomCardView.swift */; };
-		107C41E32D1F559200CD1718 /* DeviceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41E22D1F559200CD1718 /* DeviceCardView.swift */; };
 		107C41E62D1F56B800CD1718 /* DeviceConnectionToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41E52D1F56B800CD1718 /* DeviceConnectionToggleStyle.swift */; };
 		107C41E82D1F590C00CD1718 /* Assets.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41E72D1F590C00CD1718 /* Assets.generated.swift */; };
 		107C41EA2D203BC200CD1718 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C41E92D203BC200CD1718 /* Colors.swift */; };
@@ -33,7 +30,6 @@
 		107C42022D21B8DE00CD1718 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C42012D21B8DE00CD1718 /* AuthenticationViewModel.swift */; };
 		10B8A1CD2D1D64160097FF38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A1CC2D1D64160097FF38 /* AppDelegate.swift */; };
 		10B8A1CF2D1D64160097FF38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A1CE2D1D64160097FF38 /* SceneDelegate.swift */; };
-		10B8A1D12D1D64160097FF38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8A1D02D1D64160097FF38 /* ViewController.swift */; };
 		10B8A1D42D1D64160097FF38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B8A1D22D1D64160097FF38 /* Main.storyboard */; };
 		10B8A1D62D1D641A0097FF38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10B8A1D52D1D641A0097FF38 /* Assets.xcassets */; };
 		10B8A1D92D1D641A0097FF38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B8A1D72D1D641A0097FF38 /* LaunchScreen.storyboard */; };
@@ -68,11 +64,14 @@
 		10F756452D2333BF00D7D92D /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F756442D2333BF00D7D92D /* UIView+Extensions.swift */; };
 		10F756472D233F5100D7D92D /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F756462D233F5100D7D92D /* RoomType.swift */; };
 		10F756492D23D8AB00D7D92D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F756482D23D8AB00D7D92D /* User.swift */; };
-		10F7564B2D23D96D00D7D92D /* UserViewModel.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F7564A2D23D96D00D7D92D /* UserViewModel.swift.swift */; };
 		10F756512D24338F00D7D92D /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F756502D24338F00D7D92D /* UserEntity.swift */; };
 		10F756532D24341D00D7D92D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F756522D24341D00D7D92D /* CoreDataManager.swift */; };
 		10F756562D243CBD00D7D92D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F756552D243CBD00D7D92D /* NetworkManager.swift */; };
 		10F756592D244C4100D7D92D /* HomeControl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10F756572D244C4100D7D92D /* HomeControl.xcdatamodeld */; };
+		10F756612D2455B800D7D92D /* Movistar-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10F7565F2D2455B800D7D92D /* Movistar-Regular.ttf */; };
+		10F756622D2455B800D7D92D /* Movistar-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10F756602D2455B800D7D92D /* Movistar-Bold.ttf */; };
+		10F756652D246DEB00D7D92D /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F756642D246DEB00D7D92D /* NotificationManager.swift */; };
+		10F756682D246F5400D7D92D /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F756672D246F5400D7D92D /* NotificationViewModel.swift */; };
 		C5DEB52CD7077F3DE404899E /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA5F84EA33CC2994BF338D6 /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework */; };
 		E6C6EC3EEA0A7E22C78E7329 /* Pods_ControlHomeDevices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE1852F744BC15F3701C420 /* Pods_ControlHomeDevices.framework */; };
 /* End PBXBuildFile section */
@@ -104,10 +103,7 @@
 		107C41D42D1F4B9600CD1718 /* RoomDetailsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailsFactory.swift; sourceTree = "<group>"; };
 		107C41D62D1F4BA400CD1718 /* DeviceDetailsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailsFactory.swift; sourceTree = "<group>"; };
 		107C41D92D1F519D00CD1718 /* RoomDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailsView.swift; sourceTree = "<group>"; };
-		107C41DB2D1F51FD00CD1718 /* SensorDataCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataCardView.swift; sourceTree = "<group>"; };
 		107C41DE2D1F52EE00CD1718 /* DeviceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailsView.swift; sourceTree = "<group>"; };
-		107C41E02D1F557000CD1718 /* RoomCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCardView.swift; sourceTree = "<group>"; };
-		107C41E22D1F559200CD1718 /* DeviceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCardView.swift; sourceTree = "<group>"; };
 		107C41E52D1F56B800CD1718 /* DeviceConnectionToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConnectionToggleStyle.swift; sourceTree = "<group>"; };
 		107C41E72D1F590C00CD1718 /* Assets.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.generated.swift; sourceTree = "<group>"; };
 		107C41E92D203BC200CD1718 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -122,7 +118,6 @@
 		10B8A1C92D1D64160097FF38 /* ControlHomeDevices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControlHomeDevices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B8A1CC2D1D64160097FF38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10B8A1CE2D1D64160097FF38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		10B8A1D02D1D64160097FF38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		10B8A1D32D1D64160097FF38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10B8A1D52D1D641A0097FF38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10B8A1D82D1D641A0097FF38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -164,11 +159,14 @@
 		10F756442D2333BF00D7D92D /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		10F756462D233F5100D7D92D /* RoomType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomType.swift; sourceTree = "<group>"; };
 		10F756482D23D8AB00D7D92D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		10F7564A2D23D96D00D7D92D /* UserViewModel.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift.swift; sourceTree = "<group>"; };
 		10F756502D24338F00D7D92D /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		10F756522D24341D00D7D92D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		10F756552D243CBD00D7D92D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		10F756582D244C4100D7D92D /* HomeControl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeControl.xcdatamodel; sourceTree = "<group>"; };
+		10F7565F2D2455B800D7D92D /* Movistar-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Movistar-Regular.ttf"; sourceTree = "<group>"; };
+		10F756602D2455B800D7D92D /* Movistar-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Movistar-Bold.ttf"; sourceTree = "<group>"; };
+		10F756642D246DEB00D7D92D /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		10F756672D246F5400D7D92D /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		6BA5F84EA33CC2994BF338D6 /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF511375626F5A869DB90F4 /* Pods-ControlHomeDevicesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevicesTests.release.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevicesTests/Pods-ControlHomeDevicesTests.release.xcconfig"; sourceTree = "<group>"; };
 		940BA78142C5846DE88EE958 /* Pods-ControlHomeDevices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevices.debug.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevices/Pods-ControlHomeDevices.debug.xcconfig"; sourceTree = "<group>"; };
@@ -223,7 +221,6 @@
 			isa = PBXGroup;
 			children = (
 				107C41D92D1F519D00CD1718 /* RoomDetailsView.swift */,
-				107C41DB2D1F51FD00CD1718 /* SensorDataCardView.swift */,
 			);
 			path = RoomDetails;
 			sourceTree = "<group>";
@@ -274,7 +271,6 @@
 			isa = PBXGroup;
 			children = (
 				107C42012D21B8DE00CD1718 /* AuthenticationViewModel.swift */,
-				10F7564A2D23D96D00D7D92D /* UserViewModel.swift.swift */,
 			);
 			path = Authentification;
 			sourceTree = "<group>";
@@ -312,7 +308,6 @@
 				10B8A1FE2D1D65710097FF38 /* ViewModels */,
 				10B8A1FD2D1D656B0097FF38 /* Models */,
 				10B8A1FC2D1D65640097FF38 /* Views */,
-				10B8A1D02D1D64160097FF38 /* ViewController.swift */,
 				10B8A1D22D1D64160097FF38 /* Main.storyboard */,
 				10B8A1D52D1D641A0097FF38 /* Assets.xcassets */,
 				10B8A1D72D1D641A0097FF38 /* LaunchScreen.storyboard */,
@@ -367,6 +362,7 @@
 		10B8A1FE2D1D65710097FF38 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				10F756662D246F3800D7D92D /* Notification */,
 				107C42002D21B87B00CD1718 /* Authentification */,
 				107C41F72D20962800CD1718 /* Details */,
 				10B8A20D2D1D7B240097FF38 /* Login */,
@@ -378,6 +374,7 @@
 		10B8A1FF2D1D657C0097FF38 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				10F756632D246DDD00D7D92D /* NotificationManager */,
 				10F756542D243CA400D7D92D /* NetworkManager */,
 				10F7564C2D24324F00D7D92D /* CoreData */,
 				10F756412D22D9E600D7D92D /* Firebase */,
@@ -408,6 +405,7 @@
 		10B8A2022D1D65AF0097FF38 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				10F7565A2D2454A700D7D92D /* Fonts */,
 				10B8A21B2D1DA3490097FF38 /* Generated */,
 				10B8A2342D1DBD230097FF38 /* Localizable.strings */,
 				107C41E92D203BC200CD1718 /* Colors.swift */,
@@ -437,8 +435,6 @@
 				10B8A2532D1EB8480097FF38 /* Cells */,
 				10B8A24B2D1E9FC10097FF38 /* HomeViewController.swift */,
 				10B8A24C2D1E9FC10097FF38 /* HomeViewController.xib */,
-				107C41E02D1F557000CD1718 /* RoomCardView.swift */,
-				107C41E22D1F559200CD1718 /* DeviceCardView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -580,6 +576,31 @@
 			path = NetworkManager;
 			sourceTree = "<group>";
 		};
+		10F7565A2D2454A700D7D92D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				10F756602D2455B800D7D92D /* Movistar-Bold.ttf */,
+				10F7565F2D2455B800D7D92D /* Movistar-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		10F756632D246DDD00D7D92D /* NotificationManager */ = {
+			isa = PBXGroup;
+			children = (
+				10F756642D246DEB00D7D92D /* NotificationManager.swift */,
+			);
+			path = NotificationManager;
+			sourceTree = "<group>";
+		};
+		10F756662D246F3800D7D92D /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				10F756672D246F5400D7D92D /* NotificationViewModel.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		92F6A829F6ED3DBAE678B11F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -719,8 +740,10 @@
 				10B8A1D92D1D641A0097FF38 /* LaunchScreen.storyboard in Resources */,
 				10B8A2092D1D719D0097FF38 /* GoogleService-Info.plist in Resources */,
 				10B8A21F2D1DA3960097FF38 /* template.stencil in Resources */,
+				10F756622D2455B800D7D92D /* Movistar-Bold.ttf in Resources */,
 				10B8A2572D1EB8690097FF38 /* RoomCollectionViewCell.xib in Resources */,
 				10B8A1D62D1D641A0097FF38 /* Assets.xcassets in Resources */,
+				10F756612D2455B800D7D92D /* Movistar-Regular.ttf in Resources */,
 				10B8A1D42D1D64160097FF38 /* Main.storyboard in Resources */,
 				10B8A21E2D1DA3960097FF38 /* swiftgen.config.yml in Resources */,
 				10B8A25B2D1EB8810097FF38 /* DeviceCollectionViewCell.xib in Resources */,
@@ -873,17 +896,14 @@
 				107C41F62D20960C00CD1718 /* RoomDetailsViewModel.swift in Sources */,
 				10F756592D244C4100D7D92D /* HomeControl.xcdatamodeld in Sources */,
 				107C41F22D20453B00CD1718 /* LoginCoordinator.swift in Sources */,
-				10B8A1D12D1D64160097FF38 /* ViewController.swift in Sources */,
 				10F7563A2D22B00300D7D92D /* SmartLampViewModel.swift in Sources */,
 				107C41EA2D203BC200CD1718 /* Colors.swift in Sources */,
+				10F756652D246DEB00D7D92D /* NotificationManager.swift in Sources */,
 				107C41DA2D1F519D00CD1718 /* RoomDetailsView.swift in Sources */,
 				107C41DF2D1F52EE00CD1718 /* DeviceDetailsView.swift in Sources */,
-				107C41E12D1F557000CD1718 /* RoomCardView.swift in Sources */,
-				107C41E32D1F559200CD1718 /* DeviceCardView.swift in Sources */,
 				107C41E62D1F56B800CD1718 /* DeviceConnectionToggleStyle.swift in Sources */,
 				10B8A1CD2D1D64160097FF38 /* AppDelegate.swift in Sources */,
 				10B8A1CF2D1D64160097FF38 /* SceneDelegate.swift in Sources */,
-				107C41DC2D1F51FD00CD1718 /* SensorDataCardView.swift in Sources */,
 				107C41D32D1F4B5900CD1718 /* DeviceDetailsCoordinator.swift in Sources */,
 				107C41F42D20497100CD1718 /* LoginViewModel.swift in Sources */,
 				10B8A2102D1D7B930097FF38 /* LoginViewController.swift in Sources */,
@@ -891,7 +911,6 @@
 				107C41CB2D1F447600CD1718 /* AppFactory.swift in Sources */,
 				10F756532D24341D00D7D92D /* CoreDataManager.swift in Sources */,
 				10F756512D24338F00D7D92D /* UserEntity.swift in Sources */,
-				10F7564B2D23D96D00D7D92D /* UserViewModel.swift.swift in Sources */,
 				107C41FD2D20A8A500CD1718 /* UIButton+Extensions.swift in Sources */,
 				10B8A2052D1D65E70097FF38 /* Constants.swift in Sources */,
 				107C41D72D1F4BA400CD1718 /* DeviceDetailsFactory.swift in Sources */,
@@ -912,6 +931,7 @@
 				107C41D52D1F4B9600CD1718 /* RoomDetailsFactory.swift in Sources */,
 				107C41CF2D1F467100CD1718 /* HomeCoordinator.swift in Sources */,
 				10F756452D2333BF00D7D92D /* UIView+Extensions.swift in Sources */,
+				10F756682D246F5400D7D92D /* NotificationViewModel.swift in Sources */,
 				107C41E82D1F590C00CD1718 /* Assets.generated.swift in Sources */,
 				10B8A2462D1E9CBD0097FF38 /* Device.swift in Sources */,
 				10B8A25A2D1EB8810097FF38 /* DeviceCollectionViewCell.swift in Sources */,

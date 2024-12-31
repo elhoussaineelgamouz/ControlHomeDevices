@@ -26,7 +26,7 @@ final class HomeCoordinator: Coordinator {
 extension HomeCoordinator: HomeFactoryControllerCoordinator {
     func didSelectItemRoomCell(roomItem: Room) {
         let roomDetailsCoordinator = homeFactory.makeRoomDetailsCoordinator(navigation: navigation, roomItem: roomItem)
-        roomDetailsCoordinator.start()
+       // roomDetailsCoordinator.start()
     }
 
     func didSelectItemDeviceCell(deviceItem: Device) {

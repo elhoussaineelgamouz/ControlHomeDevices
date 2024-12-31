@@ -7,8 +7,4 @@
 import UIKit
 
 extension UIButton {
-    /*func cornerRadius(_ radius: CGFloat) {
-        self.layer.cornerRadius = radius
-        self.layer.masksToBounds = true
-    }*/
 }

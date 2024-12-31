@@ -50,7 +50,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupViews()
         bindCollectionsView()
-        UINavigationBar.appearance().isTranslucent = false
+        navigationItem.hidesBackButton = true
     }
 
     private func setupViews() {
@@ -109,7 +109,6 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     // MARK: - UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellHeightWidth = collectionView.frame.height
-        print("collectionViewcollectionView\(collectionView.tag)")
         return CGSize(width: 170, height: cellHeightWidth)
     }
 }

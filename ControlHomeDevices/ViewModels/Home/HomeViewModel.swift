@@ -25,12 +25,8 @@ class HomeViewModel: ObservableObject {
 
     init(coordinator: HomeFactoryControllerCoordinator)  {
         databaseRef = Database.database().reference().child("HomeDevices")
-
-        // Bind the devicesSubject to the @Published property
-
         self.fetchHomeRooms()
         self.fetchHomeDevices()
-
         self.coordinator = coordinator
     }
 
@@ -42,7 +38,9 @@ class HomeViewModel: ObservableObject {
                     // self?.errorMessage = error.localizedDescription
                 }
             } receiveValue: { [weak self] devices in
-                self?.devices.accept(devices)
+                DispatchQueue.main.async {
+                    self?.devices.accept(devices)
+                }
             }
             .store(in: &cancellables)
     }
@@ -55,7 +53,7 @@ class HomeViewModel: ObservableObject {
                     // self?.errorMessage = error.localizedDescription
                 }
             } receiveValue: { [weak self] fetchedRooms in
-                DispatchQueue.main.async {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     self?.rooms.accept(fetchedRooms)
                 }
             }

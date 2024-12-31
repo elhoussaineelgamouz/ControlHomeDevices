@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import FirebaseMessaging
 
 class LoginViewModel: ObservableObject {
     @Published var user: User?
@@ -25,6 +26,15 @@ class LoginViewModel: ObservableObject {
                 self?.isConnected = isConnected
             }
             .store(in: &cancellables)
+
+        NotificationManager.shared.fetchFCMToken()
+            .sink(receiveCompletion: { completion in
+                if case let .failure(error) = completion {
+                }
+            }, receiveValue: { token in
+                //self.fcmToken = token
+            })
+            .store(in: &cancellables)
     }
 
     func login(email: String, password: String) {
@@ -42,7 +52,7 @@ class LoginViewModel: ObservableObject {
             .store(in: &cancellables)
     }
 
-    
+
     func fetchUserDetailsLocally(userId: String) {
         self.coreDataManager.fetchUsers()
             .sink(receiveCompletion: { completion in
