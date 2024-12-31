@@ -11,82 +11,55 @@ import RxCocoa
 import FirebaseDatabase
 import Combine
 
-class HomeViewModel {
+class HomeViewModel: ObservableObject {
 
     private var databaseRef: DatabaseReference
     private var cancellables = Set<AnyCancellable>()
+    private let firebaseService = FirebaseService()
+
+    @Published var devicesArray: [Device] = []
 
     var rooms: BehaviorRelay<[Room]> = BehaviorRelay(value: [])
     var devices: BehaviorRelay<[Device]> = BehaviorRelay(value: [])
     var coordinator: HomeFactoryControllerCoordinator?
 
-    init(coordinator: HomeFactoryControllerCoordinator) {
+    init(coordinator: HomeFactoryControllerCoordinator)  {
         databaseRef = Database.database().reference().child("HomeDevices")
-        self.fetchHomeDevices()
+
+        // Bind the devicesSubject to the @Published property
+
         self.fetchHomeRooms()
+        self.fetchHomeDevices()
+
         self.coordinator = coordinator
     }
 
     func fetchHomeDevices() {
-        // Use Combine to handle async Firebase data fetch
-        Future<[Device], Error> { [weak self] promise in
-            self?.databaseRef.child("devices").observeSingleEvent(of: .value, with: { snapshot in
-                guard let value = snapshot.value as? [String: [String: Any]] else {
-                    promise(.failure(NSError(domain: "Firebase", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid data format"])))
-                    return
+        firebaseService.fetchHomeDevices()
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] completion in
+                if case let .failure(error) = completion {
+                    // self?.errorMessage = error.localizedDescription
                 }
-                do {
-                    let jsonData = try JSONSerialization.data(withJSONObject: value)
-                    let devices = try JSONDecoder().decode([String: Device].self, from: jsonData)
-                    promise(.success(devices.map { $0.value }))
-                } catch {
-                    promise(.failure(error))
-                }
-            }, withCancel: { error in
-                promise(.failure(error))
-            })
-        }
-        .receive(on: DispatchQueue.main)
-        .sink { [weak self] completion in
-            if case let .failure(error) = completion {
-                // self?.errorMessage = error.localizedDescription
+            } receiveValue: { [weak self] devices in
+                self?.devices.accept(devices)
             }
-        } receiveValue: { [weak self] devices in
-            self?.devices.accept(devices)
-        }
-        .store(in: &cancellables)
+            .store(in: &cancellables)
     }
 
     func fetchHomeRooms() {
-        // Use Combine to handle async Firebase data fetch
-        Future<[Room], Error> { [weak self] promise in
-            self?.databaseRef.child("rooms").observeSingleEvent(of: .value, with: { snapshot in
-                guard let value = snapshot.value as? [String: [String: Any]] else {
-                    promise(.failure(NSError(domain: "Firebase", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid data format"])))
-                    return
+        firebaseService.fetchHomeRooms()
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] completion in
+                if case let .failure(error) = completion {
+                    // self?.errorMessage = error.localizedDescription
                 }
-                do {
-                    let jsonData = try JSONSerialization.data(withJSONObject: value)
-                    let rooms = try JSONDecoder().decode([String: Room].self, from: jsonData)
-                    promise(.success(rooms.map { $0.value }))
-                } catch {
-                    promise(.failure(error))
+            } receiveValue: { [weak self] fetchedRooms in
+                DispatchQueue.main.async {
+                    self?.rooms.accept(fetchedRooms)
                 }
-            }, withCancel: { error in
-                promise(.failure(error))
-            })
-        }
-        .receive(on: DispatchQueue.main)
-        .sink { [weak self] completion in
-            if case let .failure(error) = completion {
-                // self?.errorMessage = error.localizedDescription
             }
-        } receiveValue: { [weak self] fetchedRooms in
-            DispatchQueue.main.async {
-                self?.rooms.accept(fetchedRooms)
-            }
-        }
-        .store(in: &cancellables)
+            .store(in: &cancellables)
     }
 
     func showRoomDetails(roomItem: Room) {

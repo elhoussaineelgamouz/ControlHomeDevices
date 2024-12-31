@@ -14,15 +14,22 @@ class RoomCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var roomIconImage: UIImageView!
     @IBOutlet weak var roomNameLabel: UILabel!
     @IBOutlet weak var roomNumberDevicesLabel: UILabel!
+    @IBOutlet weak var containerView: UIView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.setUpViews()
     }
 
     func configure(with room: Room) {
-        roomNameLabel.text = room.name
-        //roomNumberDevicesLabel.text = "\(room.devices.count) device(s) connected"
+        self.roomNameLabel.text = room.name
+        self.roomIconImage.image = room.type.iconName
+        self.roomNumberDevicesLabel.text = " 3 Devices"
+    }
+
+    private func setUpViews() {
+        self.containerView.cornerRadius(8)
     }
 
 }

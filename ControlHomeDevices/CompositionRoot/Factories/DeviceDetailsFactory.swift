@@ -17,6 +17,7 @@ struct DeviceDetailsFactoryImp: DeviceDetailsFactory {
     func makeModule(coordinator: DeviceDetailsViewControllerCoordinator, deviceItem: Device) -> UIViewController {
         let deviceDetailsUIView = DeviceDetailsView(deviceId: deviceItem.id)
         let hostingDeviceDetailsController = UIHostingController(rootView: deviceDetailsUIView)
+        hostingDeviceDetailsController.view.backgroundColor = .background
         return hostingDeviceDetailsController
     }
 }

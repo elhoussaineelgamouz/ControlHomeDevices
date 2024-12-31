@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RoomCardView: View {
+/*struct RoomCardView: View {
     let room: Room
     let devices: [Device]
 
@@ -39,4 +39,4 @@ struct RoomCard_Previews: PreviewProvider {
     static var previews: some View {
         RoomCardView(room: ModelData.rooms[0], devices: [])
     }
-}
+}*/

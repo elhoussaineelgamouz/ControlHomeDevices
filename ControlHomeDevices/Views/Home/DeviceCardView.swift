@@ -42,6 +42,6 @@ struct DeviceCardView: View {
 
 struct DeviceCardView_Previews: PreviewProvider {
     static var previews: some View {
-        DeviceCardView(device: ModelData.allDevices[0], room: ModelData.rooms[0])
+        DeviceCardView(device: Device(id: "", name: "", roomId: "", isOn: false, type: .ligthing, isConnected: true), room: Room(id: "", name: "", type: .diningRoom))
     }
 }

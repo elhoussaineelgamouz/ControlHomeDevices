@@ -16,6 +16,8 @@
                 <outlet property="loginEmailLabel" destination="9KJ-Bc-kTj" id="DXi-Us-XOA"/>
                 <outlet property="loginPasswordLabel" destination="H3t-LK-Vrt" id="a3b-cv-4jA"/>
                 <outlet property="touchIDButton" destination="I2e-qz-YtX" id="IqY-aY-93N"/>
+                <outlet property="userEmailLabel" destination="dvM-Gj-KEF" id="zOa-4I-0DV"/>
+                <outlet property="userPasswordLabl" destination="eRV-Lk-zHz" id="scr-tG-kVq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -68,7 +70,7 @@
                     </subviews>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnu-VD-QHr">
-                    <rect key="frame" x="40" y="333.66666666666669" width="313" height="38.333333333333314"/>
+                    <rect key="frame" x="40" y="353.66666666666669" width="313" height="38.333333333333314"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title=" "/>
                     <connections>
@@ -76,7 +78,7 @@
                     </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lkS-Qu-DJk">
-                    <rect key="frame" x="156.66666666666666" y="412" width="80" height="80"/>
+                    <rect key="frame" x="156.66666666666666" y="432" width="80" height="80"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2e-qz-YtX">
                             <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -97,7 +99,7 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="Background"/>
             <constraints>
-                <constraint firstItem="xnu-VD-QHr" firstAttribute="top" secondItem="Thk-pq-P11" secondAttribute="bottom" constant="20" id="0SB-Gg-Mh3"/>
+                <constraint firstItem="xnu-VD-QHr" firstAttribute="top" secondItem="Thk-pq-P11" secondAttribute="bottom" constant="40" id="0SB-Gg-Mh3"/>
                 <constraint firstItem="xnu-VD-QHr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="2PK-Yx-onz"/>
                 <constraint firstItem="Thk-pq-P11" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="MBw-js-4Uw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xnu-VD-QHr" secondAttribute="trailing" constant="40" id="QqY-ou-HbD"/>
@@ -114,7 +116,7 @@
     <resources>
         <image name="ic_touchID" width="42.666667938232422" height="42.666667938232422"/>
         <namedColor name="Background">
-            <color red="0.058823529411764705" green="0.20784313725490194" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.059000000357627869" green="0.20800000429153442" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="ButtonBackground">
             <color red="0.12156862745098039" green="0.49411764705882355" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

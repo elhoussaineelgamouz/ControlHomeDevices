@@ -13,15 +13,21 @@ class DeviceCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var deviceIconImage: UIImageView!
     @IBOutlet weak var deviceNameLabel: UILabel!
-    @IBOutlet weak var deviceNumberDevicesLabel: UILabel!
-
+    @IBOutlet weak var containerView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.setUpViews()
     }
 
     func configure(with device: Device) {
-        deviceNameLabel.text = device.name
+        self.deviceNameLabel.text = device.name
+        self.deviceIconImage.image = device.type.iconName
+    }
+
+    private func setUpViews() {
+        containerView.cornerRadius(8)
     }
 
 }

@@ -6,22 +6,20 @@
 //
 
 import Foundation
+import UIKit
 
-enum DeviceType {
+enum DeviceType: String, Codable {
     case ligthing
     case temperature
-    case other
 }
 
 extension DeviceType {
-    var iconName: String {
+    var iconName: UIImage {
         switch self {
         case .ligthing:
-            return "lightbulb.fill"
+            return .icSmartlampLam
         case .temperature:
-            return "thermometer"
-        default:
-            return "gearshape2.fill"
+            return .icThermostatIcon
         }
     }
 }

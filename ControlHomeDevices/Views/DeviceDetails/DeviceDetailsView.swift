@@ -16,45 +16,55 @@ struct DeviceDetailsView: View {
     let deviceId: String
 
     var body: some View {
-
-        VStack {
-            if let device = deviceDetailsViewModel.device {
-                VStack(spacing: 20) {
-                    Text("Device Details")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                    SmartLampView(viewModel: smartLampViewModel)
-                    Button(action: {
-                        smartLampViewModel.toggleSmartLamp()
-                    }) {
-                        Text(smartLampViewModel.isOn ? "Turn Off" : "Turn On")
-                            .font(.headline)
-                            .padding()
-                            .frame(width: 200)
-                            .background(smartLampViewModel.isOn ? Color.red : Color.green)
+        GeometryReader { proxy in
+            VStack (alignment: .center) {
+                if let device = deviceDetailsViewModel.device {
+                    VStack(spacing: 20) {
+                        Text(device.name)
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
                             .foregroundColor(.white)
-                            .cornerRadius(10)
-                            .shadow(radius: 5)
+                        if device.type == .ligthing {
+                            SmartLampView(viewModel: smartLampViewModel)
+                        } else {
+                            SmartThermostatView(viewModel: SmartThermostatViewModel())
+                        }
+                        Button(action: {
+                            smartLampViewModel.toggleSmartLamp()
+                        }) {
+                            Text(smartLampViewModel.isOn ? "Turn Off" : "Turn On")
+                                .font(.headline)
+                                .padding()
+                                .frame(width: 200)
+                                .background(smartLampViewModel.isOn ? Color.red : Color.green)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                                .shadow(radius: 5)
+                        }
                     }
-                    //SmartThermostatView(viewModel: SmartThermostatViewModel())
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .onAppear {
+                        smartLampViewModel.isOn = device.isOn
+                    }
+                } else if let errorMessage = deviceDetailsViewModel.errorMessage {
+                    Text("Error: \(errorMessage)")
+                        .foregroundColor(.red)
+                        .padding()
+                } else {
+                    ProgressView("Loading...")
                 }
-                .onAppear {
-                    smartLampViewModel.isOn = device.isOn
-                }
-            } else if let errorMessage = deviceDetailsViewModel.errorMessage {
-                Text("Error: \(errorMessage)")
-                    .foregroundColor(.red)
-                    .padding()
-            } else {
-                ProgressView("Loading...")
             }
+            .onAppear {
+                deviceDetailsViewModel.fetchDeviceDetails(deviceId: deviceId)
+            }
+            .padding()
+            .background(Color.mainBackground.opacity(0.5).ignoresSafeArea())
         }
-        .onAppear {
-            deviceDetailsViewModel.fetchDeviceDetails(deviceId: deviceId)
-        }
-        .padding()
+        .ignoresSafeArea()
     }
+
 }
+
 
 struct DeviceDetailsView_Previews: PreviewProvider {
     static var previews: some View {

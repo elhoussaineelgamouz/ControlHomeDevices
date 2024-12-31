@@ -7,6 +7,7 @@
 
 import UIKit
 import LocalAuthentication
+import Combine
 
 protocol LoginFactoryControllerCoordinator: AnyObject {
     func didSelectLoginAction()
@@ -17,25 +18,36 @@ class LoginViewController: UIViewController {
     // MARK: - Properties
     private weak var coordinator: LoginFactoryControllerCoordinator?
     private let authenticationViewModel = AuthenticationViewModel()
-    private var loginViewModel = LoginViewModel()
+    //private var loginViewModel = LoginViewModel()
+    private var viewModel: LoginViewModel!
+    private var cancellables = Set<AnyCancellable>()
 
+    // IBOutlets for text fields and labels
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var loginPasswordLabel: UILabel!
     @IBOutlet weak var loginEmailLabel: UILabel!
     @IBOutlet weak var loginAppTitleLabel: UILabel!
     @IBOutlet weak var touchIDButton: UIButton!
-
+    @IBOutlet weak var userPasswordLabl: UITextField!
+    @IBOutlet weak var userEmailLabel: UITextField!
     // MARK: - Button Actions
 
     @IBAction func loginButtonAction(_ sender: UIButton) {
-        coordinator?.didSelectLoginAction()
+        guard let email = userEmailLabel.text?.trimmingCharacters(in: .whitespaces), let password = userPasswordLabl.text?.trimmingCharacters(in: .whitespaces) else {
+         //errorMessageLabel.text = "Please enter both email and password."
+         //errorMessageLabel.isHidden = false
+         return
+         }
+         viewModel.login(email: email, password: password)
+
+       // self.coordinator?.didSelectLoginAction()
     }
 
     @IBAction func touchIDButtonACtion(_ sender: UIButton) {
         authenticationViewModel.authenticateUser()
     }
     init(viewModel: LoginViewModel, coordinator: LoginFactoryControllerCoordinator) {
-        self.loginViewModel = viewModel
+        self.viewModel = viewModel
         self.coordinator = coordinator
         super.init(nibName: nil, bundle: nil)
     }
@@ -48,15 +60,35 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         setUpViews()
 
+        // Observing user
+        viewModel.$user
+            .sink { [weak self] user in
+                if user != nil {
+                    self?.coordinator?.didSelectLoginAction()
+                }
+            }
+            .store(in: &cancellables)
+        //Observing errorMessage
+        viewModel.$errorMessage
+            .sink { [weak self] errorMessage in
+                if let message = errorMessage {
+                    // Display error message if login fails
+                    // self?.errorMessageLabel.text = message
+                    //self?.errorMessageLabel.isHidden = false
+                } else {
+                    //self?.errorMessageLabel.isHidden = true
+                }
+            }
+            .store(in: &cancellables)
+
         authenticationViewModel.isAuthenticated = { [weak self] success in
             if success {
-               // self?.statusLabel.text = ""
-                print("Authentication Succeeded")
+                self?.coordinator?.didSelectLoginAction()
             }
         }
 
         authenticationViewModel.errorMessage = { [weak self] error in
-           // self?.statusLabel.text = "Error: \(error)"
+            // self?.statusLabel.text = "Error: \(error)"
             print("Error: \(error)")
         }
     }

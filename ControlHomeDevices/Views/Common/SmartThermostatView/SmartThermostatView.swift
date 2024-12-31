@@ -16,7 +16,6 @@ struct SmartThermostatView: View {
                 Text("Thermostat")
                     .font(.title)
                     .bold()
-
                 Circle()
                     .fill(viewModel.isOn ? Color.green : Color.gray)
                     .frame(width: 150, height: 150)
@@ -27,7 +26,6 @@ struct SmartThermostatView: View {
                     )
                     .shadow(radius: 10)
             }
-
             // Temperature Display
             VStack {
                 Text("Temperature: °C")
@@ -60,18 +58,18 @@ struct SmartThermostatView: View {
             }
 
             // Toggle Thermostat On/Off Button
-            Button(action: {
-                viewModel.toggleSmartThermostat()  // Toggle thermostat state
-            }) {
-                Text(viewModel.isOn ? "Turn Off" : "Turn On")
-                    .font(.headline)
-                    .padding()
-                    .frame(width: 200)
-                    .background(viewModel.isOn ? Color.red : Color.green)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                    .shadow(radius: 5)
-            }
+            /* Button(action: {
+             viewModel.toggleSmartThermostat()  // Toggle thermostat state
+             }) {
+             Text(viewModel.isOn ? "Turn Off" : "Turn On")
+             .font(.headline)
+             .padding()
+             .frame(width: 200)
+             .background(viewModel.isOn ? Color.red : Color.green)
+             .foregroundColor(.white)
+             .cornerRadius(10)
+             .shadow(radius: 5)
+             }*/
         }
         .padding()
         .animation(.easeInOut, value: viewModel.isOn)

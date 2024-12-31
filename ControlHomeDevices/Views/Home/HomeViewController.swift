@@ -18,6 +18,7 @@ protocol HomeFactoryControllerCoordinator: AnyObject {
 
 class HomeViewController: UIViewController {
 
+
     @IBOutlet weak var smartLamHomeImage: UIImageView!
     @IBOutlet weak var roomsCollectionView: UICollectionView!
     @IBOutlet weak var devicesCollectionView: UICollectionView!
@@ -42,16 +43,20 @@ class HomeViewController: UIViewController {
         bindCollectionsView()
     }
 
-
     private func setupViews() {
         self.devicesCollectionView.register(UINib(nibName: "DeviceCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: DeviceCollectionViewCell.reuseIdentifier)
 
         self.roomsCollectionView.register(UINib(nibName: "RoomCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: RoomCollectionViewCell.reuseIdentifier)
 
+        self.devicesCollectionView.tag = 1
+        self.roomsCollectionView.tag = 2
+
+        self.devicesCollectionView.delegate = self
+        self.roomsCollectionView.delegate = self
 
         let customLayout = UICollectionViewFlowLayout()
-        customLayout.minimumLineSpacing = 10
-        customLayout.minimumInteritemSpacing = 10
+        customLayout.minimumLineSpacing = 5
+        customLayout.minimumInteritemSpacing = 5
         customLayout.scrollDirection = .horizontal
         self.roomsCollectionView.collectionViewLayout = customLayout
         self.devicesCollectionView.collectionViewLayout = customLayout
@@ -90,10 +95,11 @@ class HomeViewController: UIViewController {
 
 }
 
-extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension HomeViewController: UICollectionViewDelegateFlowLayout {
     // MARK: - UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellHeightWidth = collectionView.frame.height
-        return CGSize(width: cellHeightWidth, height: cellHeightWidth)
+        print("collectionViewcollectionView\(collectionView.tag)")
+        return CGSize(width: 170, height: cellHeightWidth)
     }
 }
