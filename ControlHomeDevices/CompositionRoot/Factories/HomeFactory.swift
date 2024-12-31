@@ -32,22 +32,9 @@ struct HomeFactoryImp: HomeFactory {
     }
 
     func makeModel(coordinator: HomeFactoryControllerCoordinator) -> UIViewController {
-        /* let apiClientService = ApiClientServiceImp()
-         let moviesListRepository = MoviesListRepositoryImp(apiClientService: apiClientService, urlList: Endpoint.baseUrl)
-         let loadMoviesListCase = homeListUseCaseImp(moviesListRepository: moviesListRepository)
-         let state = PassthroughSubject<StateController, Never>()
-         let homeViewModel = HomeViewModelIpm(state: state, loadMoviesListUseCase: loadMoviesListCase)
-         // let moviesListController = MoviesListViewController(viewModel: moviesListViewModel, coordinator: coordinator)
-         moviesListController.title = AppLocalized.appName
-         return moviesListController*/
         let homeViewModel = HomeViewModel(coordinator: coordinator)
         let HomeViewVC = HomeViewController(viewModel: homeViewModel, coordinator: coordinator)
         return HomeViewVC
     }
 
-    /*func makeMovieDetailsCoordinator(navigation: UINavigationController, movieItem: MovieItem) -> Coordinator {
-     let movieDetailsFactory = MovieDetailsFactoryImp()
-     let moviedetailsCoordinator = MovieDetailsCoordinator(navigation: navigation, movieDetailsFactory: movieDetailsFactory, movieItem: movieItem)
-     return moviedetailsCoordinator
-     }*/
 }

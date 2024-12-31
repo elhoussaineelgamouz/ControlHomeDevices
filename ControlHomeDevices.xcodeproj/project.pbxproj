@@ -69,6 +69,10 @@
 		10F756472D233F5100D7D92D /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F756462D233F5100D7D92D /* RoomType.swift */; };
 		10F756492D23D8AB00D7D92D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F756482D23D8AB00D7D92D /* User.swift */; };
 		10F7564B2D23D96D00D7D92D /* UserViewModel.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F7564A2D23D96D00D7D92D /* UserViewModel.swift.swift */; };
+		10F756512D24338F00D7D92D /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F756502D24338F00D7D92D /* UserEntity.swift */; };
+		10F756532D24341D00D7D92D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F756522D24341D00D7D92D /* CoreDataManager.swift */; };
+		10F756562D243CBD00D7D92D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F756552D243CBD00D7D92D /* NetworkManager.swift */; };
+		10F756592D244C4100D7D92D /* HomeControl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10F756572D244C4100D7D92D /* HomeControl.xcdatamodeld */; };
 		C5DEB52CD7077F3DE404899E /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA5F84EA33CC2994BF338D6 /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework */; };
 		E6C6EC3EEA0A7E22C78E7329 /* Pods_ControlHomeDevices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE1852F744BC15F3701C420 /* Pods_ControlHomeDevices.framework */; };
 /* End PBXBuildFile section */
@@ -161,6 +165,10 @@
 		10F756462D233F5100D7D92D /* RoomType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomType.swift; sourceTree = "<group>"; };
 		10F756482D23D8AB00D7D92D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		10F7564A2D23D96D00D7D92D /* UserViewModel.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift.swift; sourceTree = "<group>"; };
+		10F756502D24338F00D7D92D /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		10F756522D24341D00D7D92D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		10F756552D243CBD00D7D92D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		10F756582D244C4100D7D92D /* HomeControl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomeControl.xcdatamodel; sourceTree = "<group>"; };
 		6BA5F84EA33CC2994BF338D6 /* Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ControlHomeDevices_ControlHomeDevicesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF511375626F5A869DB90F4 /* Pods-ControlHomeDevicesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevicesTests.release.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevicesTests/Pods-ControlHomeDevicesTests.release.xcconfig"; sourceTree = "<group>"; };
 		940BA78142C5846DE88EE958 /* Pods-ControlHomeDevices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlHomeDevices.debug.xcconfig"; path = "Target Support Files/Pods-ControlHomeDevices/Pods-ControlHomeDevices.debug.xcconfig"; sourceTree = "<group>"; };
@@ -370,6 +378,8 @@
 		10B8A1FF2D1D657C0097FF38 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				10F756542D243CA400D7D92D /* NetworkManager */,
+				10F7564C2D24324F00D7D92D /* CoreData */,
 				10F756412D22D9E600D7D92D /* Firebase */,
 			);
 			path = Services;
@@ -550,6 +560,24 @@
 				10F756422D22DA0200D7D92D /* FirebaseService.swift */,
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		10F7564C2D24324F00D7D92D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				10F756502D24338F00D7D92D /* UserEntity.swift */,
+				10F756522D24341D00D7D92D /* CoreDataManager.swift */,
+				10F756572D244C4100D7D92D /* HomeControl.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		10F756542D243CA400D7D92D /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				10F756552D243CBD00D7D92D /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 		92F6A829F6ED3DBAE678B11F /* Pods */ = {
@@ -843,6 +871,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				107C41F62D20960C00CD1718 /* RoomDetailsViewModel.swift in Sources */,
+				10F756592D244C4100D7D92D /* HomeControl.xcdatamodeld in Sources */,
 				107C41F22D20453B00CD1718 /* LoginCoordinator.swift in Sources */,
 				10B8A1D12D1D64160097FF38 /* ViewController.swift in Sources */,
 				10F7563A2D22B00300D7D92D /* SmartLampViewModel.swift in Sources */,
@@ -860,6 +889,8 @@
 				10B8A2102D1D7B930097FF38 /* LoginViewController.swift in Sources */,
 				107C41F02D20452100CD1718 /* LoginFactory.swift in Sources */,
 				107C41CB2D1F447600CD1718 /* AppFactory.swift in Sources */,
+				10F756532D24341D00D7D92D /* CoreDataManager.swift in Sources */,
+				10F756512D24338F00D7D92D /* UserEntity.swift in Sources */,
 				10F7564B2D23D96D00D7D92D /* UserViewModel.swift.swift in Sources */,
 				107C41FD2D20A8A500CD1718 /* UIButton+Extensions.swift in Sources */,
 				10B8A2052D1D65E70097FF38 /* Constants.swift in Sources */,
@@ -867,6 +898,7 @@
 				10B8A24D2D1E9FC10097FF38 /* HomeViewController.swift in Sources */,
 				10F756492D23D8AB00D7D92D /* User.swift in Sources */,
 				10B8A2622D1EF7E40097FF38 /* Coordinator.swift in Sources */,
+				10F756562D243CBD00D7D92D /* NetworkManager.swift in Sources */,
 				107C41F92D20964B00CD1718 /* DeviceDetailsViewModel.swift in Sources */,
 				10B8A2522D1EA41D0097FF38 /* HomeViewModel.swift in Sources */,
 				107C41CD2D1F44E600CD1718 /* HomeFactory.swift in Sources */,
@@ -1255,6 +1287,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		10F756572D244C4100D7D92D /* HomeControl.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				10F756582D244C4100D7D92D /* HomeControl.xcdatamodel */,
+			);
+			currentVersion = 10F756582D244C4100D7D92D /* HomeControl.xcdatamodel */;
+			path = HomeControl.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 10B8A1C12D1D64160097FF38 /* Project object */;
 }

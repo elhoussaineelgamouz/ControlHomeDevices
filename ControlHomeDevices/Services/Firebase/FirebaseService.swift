@@ -13,6 +13,7 @@ import Combine
 class FirebaseService {
     private let database = Database.database().reference().child("HomeDevices")
     private let db = Firestore.firestore()
+    let coreDataManager = CoreDataManager()
 
     // Login function using Firebase Authentication
     func login(email: String, password: String) -> AnyPublisher<String, Error> {
@@ -40,16 +41,14 @@ class FirebaseService {
                     return
                 }
                 do {
-                    // Deserialize the value into a dictionary of userId -> User
+
                     let jsonData = try JSONSerialization.data(withJSONObject: value)
                     let users = try JSONDecoder().decode([String: User].self, from: jsonData)
 
-                    // Find the user using the userId via first(where:)
                     if let firstUser = users.first(where: { $0.value.userId == userId })?.value {
-                        // Return the first user found
+                        // self?.storeUserLocally(user: firstUser)
                         promise(.success(firstUser))
                     } else {
-                        // Handle case where there is no user in the dictionary
                         promise(.failure(NSError(domain: "FirebaseError", code: 404, userInfo: [NSLocalizedDescriptionKey: "No users found"])))
                     }
 
@@ -61,6 +60,14 @@ class FirebaseService {
             })
         }
         .eraseToAnyPublisher()
+    }
+
+    func storeUserLocally(user: User) {
+        let userEntity = UserEntity(context: coreDataManager.container.viewContext)
+        userEntity.userId = user.userId
+        userEntity.userFirstName = user.userFirstName
+        userEntity.userLastName = user.userLastName
+        coreDataManager.saveUser(user: userEntity)
     }
 
     func fetchDeviceDetails(deviceId: String) -> AnyPublisher<Device, Error> {
@@ -136,7 +143,6 @@ class FirebaseService {
                     promise(.failure(NSError(domain: "InvalidData", code: 0, userInfo: [NSLocalizedDescriptionKey: "No devices found"])))
                     return
                 }
-
                 let devices = devicesDict.values.compactMap { deviceData -> Device? in
                     guard
                         let id = deviceData["id"] as? String,

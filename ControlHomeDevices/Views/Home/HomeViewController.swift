@@ -19,6 +19,7 @@ protocol HomeFactoryControllerCoordinator: AnyObject {
 class HomeViewController: UIViewController {
 
 
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var smartLamHomeImage: UIImageView!
     @IBOutlet weak var roomsCollectionView: UICollectionView!
     @IBOutlet weak var devicesCollectionView: UICollectionView!
@@ -37,10 +38,19 @@ class HomeViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        // Reapply the top constraint to safe area
+        if let safeAreaTop = view.safeAreaLayoutGuide.topAnchor as? NSLayoutYAxisAnchor {
+            containerView.topAnchor.constraint(equalTo: safeAreaTop).isActive = true
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         bindCollectionsView()
+        UINavigationBar.appearance().isTranslucent = false
     }
 
     private func setupViews() {

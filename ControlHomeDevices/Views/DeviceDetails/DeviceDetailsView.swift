@@ -58,7 +58,7 @@ struct DeviceDetailsView: View {
                 deviceDetailsViewModel.fetchDeviceDetails(deviceId: deviceId)
             }
             .padding()
-            .background(Color.mainBackground.opacity(0.5).ignoresSafeArea())
+            .background(Color.mainBackground)
         }
         .ignoresSafeArea()
     }

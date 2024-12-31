@@ -15,8 +15,6 @@ struct RoomDetailsView: View {
 
     @StateObject var viewModel = RoomDetailsViewModel()
     @Environment(\.presentationMode) var presentation
-    @State private var counterProgress: Double = 0.0
-    private let counterSteps = 100.0
 
     var body: some View {
         GeometryReader { proxy in

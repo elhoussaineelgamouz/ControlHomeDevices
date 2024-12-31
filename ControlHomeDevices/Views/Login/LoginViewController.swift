@@ -33,14 +33,19 @@ class LoginViewController: UIViewController {
     // MARK: - Button Actions
 
     @IBAction func loginButtonAction(_ sender: UIButton) {
-        guard let email = userEmailLabel.text?.trimmingCharacters(in: .whitespaces), let password = userPasswordLabl.text?.trimmingCharacters(in: .whitespaces) else {
-         //errorMessageLabel.text = "Please enter both email and password."
-         //errorMessageLabel.isHidden = false
-         return
-         }
-         viewModel.login(email: email, password: password)
 
-       // self.coordinator?.didSelectLoginAction()
+        if viewModel.isConnected {
+            guard let email = userEmailLabel.text?.trimmingCharacters(in: .whitespaces), let password = userPasswordLabl.text?.trimmingCharacters(in: .whitespaces) else {
+                //errorMessageLabel.text = "Please enter both email and password."
+                //errorMessageLabel.isHidden = false
+                return
+            }
+            viewModel.login(email: email, password: password)
+        }else{
+            print("there is no internet connection")
+        }
+
+        // self.coordinator?.didSelectLoginAction()
     }
 
     @IBAction func touchIDButtonACtion(_ sender: UIButton) {
